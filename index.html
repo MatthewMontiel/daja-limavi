@@ -1,7 +1,155 @@
-<!-- 
-    This is possibly the oldest known song in the world https://tinyurl.com/oldest-song
-    These are some of the #1 hits from the years the daja-limavi team was born:
-        •https://tinyurl.com/from-1987
-        •https://tinyurl.com/from-1988
-        •https://tinyurl.com/from-1989
- -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--Top of Nav-->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+          <img
+            src="./assets/images/DJ header.png"
+            width="112"
+            height="28"
+          />
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item"> Home </a>
+
+          <a class="navbar-item"> About </a>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link"> More </a>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item"> The Team </a>
+              <a class="navbar-item"> Our Mission </a>
+              <a class="navbar-item"> Contact </a>
+              <hr class="navbar-divider" />
+              <a class="navbar-item"> Report an issue </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">  
+            <strong>WHO WILL YOU DISCOVER NEXT?</strong>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--end of nav bar-->
+
+    <!--Search Input -->
+    <section class="container is-max-desktop">
+      <section class="searchBar">
+        <div class="field is-grouped px-5 py-5">
+          <p class="control is-expanded">
+            <input
+              class="input"
+              type="text"
+              placeholder="Let's explore the music universe"
+            />
+          </p>
+          <p class="control">
+            <a class="button is-link is-rounded"> Search </a>
+          </p>
+        </div>
+      </section>
+    </section>
+    <!--End of Seach Input-->
+
+    <!--Genre Modifiers with placeholder genres that can be changed-->
+    <section class="container is-max-desktop">
+      <section class="modifiers">
+        <div class="field pl-5 is-grouped is-grouped-multiline">
+          <p class="control">
+            <a class="button is-link is-outlined is-rounded is-active">
+              Rock
+            </a>
+          </p>
+          <p class="control">
+            <a class="button is-link is-outlined is-rounded is-active"> Rap </a>
+          </p>
+          <p class="control">
+            <a class="button is-link is-outlined is-rounded is-active">
+              Country
+            </a>
+          </p>
+          <p class="control">
+            <a class="button is-link is-outlined is-rounded is-active">
+              Jazz
+            </a>
+          </p>
+          <p class="control">
+            <a class="button is-link is-outlined is-rounded is-active">
+              Alternative
+            </a>
+          </p>
+          <p class="control">
+            <a class="button is-link is-outlined is-rounded is-active"> Pop </a>
+          </p>
+          <p class="control">
+            <a class="button is-link is-outlined is-rounded is-active">
+              Punk
+            </a>
+          </p>
+          <p class="control">
+            <a class="button is-link is-outlined is-rounded is-active">
+              Metal
+            </a>
+          </p>
+          <p class="control">
+            <a class="button is-link is-outlined is-rounded is-active">
+              Classical
+            </a>
+          </p>
+          <p class="control">
+            <a class="button is-link is-outlined is-rounded is-active">
+              Latin
+            </a>
+          </p>
+          <p class="control">
+            <a class="button is-link is-outlined is-rounded is-active">
+              Electro
+            </a>
+          </p>
+          <p class="control">
+            <a class="button is-link is-outlined is-rounded is-active">
+              Children
+            </a>
+          </p>
+          <p class="control">
+            <a class="button is-link is-outlined is-rounded is-active">
+              Chill
+            </a>
+          </p>
+        </div>
+      </section>
+    </section>
+    <!--End of Genre Modifier-->
+  </body>
+</html>
