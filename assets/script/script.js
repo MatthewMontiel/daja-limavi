@@ -1,5 +1,7 @@
 // function to highlight genre modifier
-$(".button").addEventListener("click", selectGenreModifiers);
+let GMBtn = document.querySelector(".button");
+
+GMBtn.addEventListener("click", selectGenreModifiers);
 
 function selectGenreModifiers(event) {
         event.target.toggle("useGM");
