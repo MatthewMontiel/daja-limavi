@@ -1,0 +1,16 @@
+/* styling variables that can be used to sub into the initial html replacements */
+:root {
+    /* Matt can you add the colors of the dj icon to the primary, secondary, and tertiary color variables */
+    --primaryclr: #fff; 
+    --secondaryclr: #fff;
+    --tertiaryclr: #fff;
+    /* these are just temporary colors to try and get things to trigger */
+    --Cyan: #00FFFF;
+    --LimeGreen: #32CD32;
+    --Magenta: #FF00FF;
+}
+
+.useGM {
+    background-color: var(--Cyan);
+    color: var(--LimeGreen);
+}
