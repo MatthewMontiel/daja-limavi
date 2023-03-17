@@ -10,9 +10,8 @@
     --Magenta: #FF00FF;
 }
 
-.useGM {
-    background-color: var(--Cyan);
-    color: var(--LimeGreen);
+.container-active {
+    background-color: #526ea2;
 }
 
 .searchBG {
@@ -22,3 +21,6 @@
    background-attachment: fixed;
    background-image: url(./audiocontrols.jpg)
 }
+
+
+
