@@ -29,5 +29,17 @@
 //     this.className = classes.join(' ');
 // });
 
-let activeGMOD = document.getElementById("gmTray").children().attr("button");
-console.log(activeGMOD);
+
+// to store the clicked on genre modifiers as an arrays
+activeGMods = [];
+GenModTray = document.querySelector("#gmTray");
+GMods = document.querySelectorAll("[data-genMod]");
+
+GenModTray.addeventlistener("click", addGenMod());
+
+function addGenMod() {
+    GMods = document.querySelectorAll("[data-genMod]"); console.log(GMods);
+    console.log("click test on");
+    $(this).children().attr("[data-genMod]");
+    activeGMods = JSON.parse(this);
+}
