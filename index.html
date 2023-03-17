@@ -10,10 +10,6 @@
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <script
-    src="https://code.jquery.com/jquery-3.6.4.js"
-    integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
-    crossorigin="anonymous"></script>
 
     <title>Home</title>
   </head>
@@ -40,9 +36,7 @@
 
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-          <a class="navbar-item"> Home </a>
-
-          <a class="navbar-item"> About </a>
+          <a class="navbar-item"> How to use </a>
 
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link"> More </a>
@@ -88,10 +82,10 @@
 
     <!--Genre Modifiers with placeholder initial genres that can be changed-->
     <section class="container is-max-desktop">
-      <section class="modifiers">
+      <section id="gmTray" class="modifiers">
         <div class="field pl-5 is-grouped is-grouped-multiline">
           <p class="control">
-            <a class="button is-link is-outlined is-rounded is-light is-focused useGM">
+            <a id="useGM" class="button is-link is-outlined is-rounded is-light is-focused">
               Rock
             </a>
           </p>
@@ -103,89 +97,6 @@
           <p class="control">
             <a class="button is-link is-outlined is-rounded is-light is-focused">
               Punk
-            </a>
-          </p>
-          <p class="control">
-            <a class="button is-link is-outlined is-rounded is-light is-focused">
-              Hip Hop / Rap / Contemporary R&B
-            </a>
-          </p>
-          <p class="control">
-            <a class="button is-link is-outlined is-rounded is-light is-focused"> Pop </a>
-          </p>
-          <p class="control">
-            <a class="button is-link is-outlined is-rounded is-light is-focused">
-              Soul / R&B / Doo Wop
-            </a>
-          </p>
-          <p class="control">
-            <a class="button is-link is-outlined is-rounded is-light is-focused">
-              Jazz
-            </a>
-          </p>
-          <p class="control">
-            <a class="button is-link is-outlined is-rounded is-light is-focused">
-              Classical
-            </a>
-          </p>
-          <p class="control">
-            <a class="button is-link is-outlined is-rounded is-light is-focused">
-              Experimental
-            </a>
-          </p>
-          <p class="control">
-            <a class="button is-link is-outlined is-rounded is-light is-focused">
-              Ambient / Instrumental
-            </a>
-          </p>
-          <p class="control">
-            <a class="button is-link is-outlined is-rounded is-light is-focused">
-              Folk / Singer-Songwriter
-            </a>
-          </p>
-          <p class="control">
-            <a class="button is-link is-outlined is-rounded is-light is-focused">
-              Latin
-            </a>
-          </p>
-          <p class="control">
-            <a class="button is-link is-outlined is-rounded is-light is-focused">
-              World Music
-            </a>
-          </p>
-          <p class="control">
-            <a class="button is-link is-outlined is-rounded is-light is-focused">
-              Regional / Traditional
-            </a>
-          </p>
-          <p class="control">
-            <a class="button is-link is-outlined is-rounded is-light is-focused">
-              Country
-            </a>
-          </p>
-          <p class="control">
-            <a class="button is-link is-outlined is-rounded is-light is-focused">
-              Blues
-            </a>
-          </p>
-          <p class="control">
-            <a class="button is-link is-outlined is-rounded is-light is-focused">
-              Funk
-            </a>
-          </p>
-          <p class="control">
-            <a class="button is-link is-outlined is-rounded is-light is-focused">
-              Electronic
-            </a>
-          </p>
-          <p class="control">
-            <a class="button is-link is-outlined is-rounded is-light is-focused">
-              Religious
-            </a>
-          </p>
-          <p class="control">
-            <a class="button is-link is-outlined is-rounded is-light is-focused">
-              Show Tunes / Vaudeville
             </a>
           </p>
         </div>
@@ -203,5 +114,9 @@
     ></script>
     <script src="https://unpkg.com/dayjs-with-plugins"></script>
 <script src="./assets/script/script.js"></script>
+<script
+src="https://code.jquery.com/jquery-3.6.4.js"
+integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+crossorigin="anonymous"></script>
   </body>
 </html>
