@@ -16,27 +16,12 @@ $(genModTray).click(function (event) {
   } else {
     event.target.setAttribute("value", "inactive");
     console.log(gmodState);
-    function removeGMod(event) {
-    //   let gmodState = event.target.getAttribute("value");
-    //   let gmodString = event.target.getAttribute("title");
-    let genreCall = activeGMods.filter(e => e !== "event.target");
-    console.log(genreCall);
-    //   if (gmodState === "inactive") {
-    //     activeGMods.splice(gmodIndex, gmodString);
-    //   }
+    function removeGMod() {
+        let gmodIndex = activeGMods.indexOf(gmodString); console.log(gmodIndex);
+        activeGMods.splice(gmodIndex,1);
     }
     removeGMod();
-    console.log(activeGMods.indexOf(gmodString));
     console.log(gmodString);
   }
   console.log(activeGMods);
 });
-
-// function removeGMod(event) {
-//     let gmodState = event.target.getAttribute("value");
-//     let gmodString = event.target.getAttribute("title");
-//     let gmodIndex = indexOf(gmodString);
-//     if (gmodState === "inactive"){
-//     activeGMods.splice(gmodIndex, gmodString);
-//     }
-// };
