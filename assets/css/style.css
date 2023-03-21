@@ -1,17 +1,18 @@
 /* styling variables that can be used to sub into the initial html replacements */
 :root {
-    --primaryclr: #6c52a2; 
-    --secondaryclr: #9552a2;
-    --tertiaryclr: #526ea2;
+    --primarylavender: #6c52a2; 
+    --orchidhighlight: #9552a2;
+    --darkblue: #526ea2;
+    --brightblue: #296fca;
+    --silver: #fff;
+    --white: #fff;
     /* these are just temporary colors to try and get things to trigger */
-    --Cyan: #00FFFF;
-    --LimeGreen: #32CD32;
-    --Magenta: #FF00FF;
+    --construct1: #00FFFF;
+    --construct2: #32CD32;
+    --construct3: #FF00FF;
 }
 
-.container-active {
-    background-color: #526ea2;
-}
+
 
 .searchBG {
    display: block;
@@ -21,5 +22,20 @@
    background-image: url(./audiocontrols.jpg)
 }
 
+.button { /* replacement color override of bulma button */
+    background-color: var(--primarylavender) !important;
+    border-color: var(--darkblue) !important;
+    color: var(--silver) !important;
 
+}
+ .button:hover { /* replacement color override of bulma button */
+    background-color: var(--silver) !important;
+    border-color: var(--orchidhighlight) !important;
+    color: var(--brightblue) !important;
 
+}
+
+.results { /* results styling */
+    background-color: var(--construct3);
+    color: var(--construct1);
+}
