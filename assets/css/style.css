@@ -1,6 +1,5 @@
 /* styling variables that can be used to sub into the initial html replacements */
 :root {
-    /* Matt can you add the colors of the dj icon to the primary, secondary, and tertiary color variables */
     --primaryclr: #6c52a2; 
     --secondaryclr: #9552a2;
     --tertiaryclr: #526ea2;
