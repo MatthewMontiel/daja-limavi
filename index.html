@@ -55,8 +55,8 @@
       </div>
     </nav>
     <!--end of nav bar-->
-    <body>
-    <div class="searchBG" src="./assets/images/audiocontrols.jpg">
+<body>
+  <div class="searchBG" src="./assets/images/audiocontrols.jpg">
     <!-- Search Input -->
     <section class="container is-max-desktop">
       <section class="searchBar">
@@ -82,17 +82,26 @@
       <section id="gmTray" class="modifiers">
         <div class="field pl-5 is-grouped is-grouped-multiline">
           <p class="control">
-            <a data-genMod title="Rock" class="button is-link is-outlined is-rounded is-light is-focused">
+            <a data-genMod 
+              title="Rock" 
+              value="inactive" 
+              class="button is-link is-outlined is-rounded is-light is-focused">
               Rock
             </a>
           </p>
           <p class="control">
-            <a data-genMod title="Metal" class="button is-link is-outlined is-rounded is-light is-focused">
+            <a data-genMod
+              title="Metal" 
+              value="inactive" 
+              class="button is-link is-outlined is-rounded is-light is-focused">
               Metal
             </a>
           </p>
           <p class="control">
-            <a data-genMod title="Punk" class="button is-link is-outlined is-rounded is-light is-focused">
+            <a data-genMod 
+              title="Punk" 
+              value="inactive" 
+              class="button is-link is-outlined is-rounded is-light is-focused">
               Punk
             </a>
           </p>
@@ -101,19 +110,23 @@
     </section>
     <!--End of Genre Modifier-->
 
-<!--Search results -->
-    <section class="results"></section>
-<!--End of Search results-->
-<script
+  <!--Search results-->
+  <section class="results">
+    Search Results Area
+  </section>
+  <!--End of Search results-->
+  <!-- script linking section -->
+  <script
       src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
       integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/dayjs-with-plugins"></script>
-<script src="./assets/script/script.js"></script>
-<script
-src="https://code.jquery.com/jquery-3.6.4.js"
-integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
-crossorigin="anonymous"></script>
-  </body>
+      crossorigin="anonymous">
+  </script>
+  <script src="https://unpkg.com/dayjs-with-plugins"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.6.4.js"
+    integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+    crossorigin="anonymous">
+  </script>
+  <script src="./assets/script/script.js"></script>
+</body>
 </html>
