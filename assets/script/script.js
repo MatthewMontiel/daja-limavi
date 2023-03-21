@@ -4,7 +4,7 @@ genModTray = document.querySelector("#gmTray");
 gMods = document.querySelectorAll("[data-genMod]");
 console.log(gMods);
 
-// this part works but isn't the desired end result
+// primary function cased on genre modifier click selection will add/remove
 $(genModTray).click(function (event) {
   let gmodState = event.target.getAttribute("value");
   let gmodString = event.target.getAttribute("title");
