@@ -1,12 +1,12 @@
 // import variables 
-import results from "./mainfetch";
+// import results from "./mainfetch";
 // global variables
   let userSearch = document.querySelector("#searchTerm");
   let resultsListing = document.querySelector("#resultsListing");
   let activeGMods = [];
-  genModTray = document.querySelector("#gmTray");
-  gMods = document.querySelectorAll("[data-genMod]");
-  console.log(gMods);
+  let genModTray = document.querySelector("#gmTray");
+  let gMods = document.querySelectorAll("[data-genMod]");
+  // console.log(gMods);
 
 // functions area
   // primary function cased on genre modifier click selection will add/remove
@@ -15,9 +15,9 @@ import results from "./mainfetch";
     let gmodString = event.target.getAttribute("title");
     if (gmodState === "inactive") {
       event.target.setAttribute("value", "active");
-      console.log(gmodState);
+      // console.log(gmodState);
       activeGMods.push(gmodString);
-      console.log(gmodString);
+      // console.log(gmodString);
     } else {
       event.target.setAttribute("value", "inactive");
       console.log(gmodState);
@@ -26,13 +26,13 @@ import results from "./mainfetch";
         activeGMods.splice(gmodIndex,1);
       }
       removeGMod();
-      console.log(gmodString);
+      // console.log(gmodString);
     }
     console.log(activeGMods);
   });
   // function to write results in display list
-  function displayResults () {
+  // // function displayResults () {
     
-  };
+  // };
 // export variables 
   export default activeGMods;
