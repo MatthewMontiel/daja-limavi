@@ -402,7 +402,3 @@ searchBtn.addEventListener('click', runGenres);
 logBtn.addEventListener('click', log);
 // export variables
 // export default results;
-
-blahblahblah
-
-
