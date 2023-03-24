@@ -14,7 +14,7 @@
     <!--Top of Nav-->
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <a class="navbar-item" href="#home"> <!--possibly update this to always link to the home page-->
+        <a class="navbar-item" href="./index.html"> <!--possibly update this to always link to the home page-->
           <img id="home" src="./assets/images/DJ header.png" width="112" height="28" />
         </a>
         <a
@@ -32,13 +32,13 @@
 
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-          <a class="navbar-item"> How to use </a>
+          <a class="navbar-item" href="./assets/html/about.html"> How to use </a>
 
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link"> More </a>
 
             <div class="navbar-dropdown">
-              <a class="navbar-item" href="./html/team.html"> The Team 
+              <a class="navbar-item" href="./assets/html/team.html"> The Team 
                 <div class="modal">
   <div class="modal-background"></div>
   <div class="modal-card">
@@ -56,8 +56,8 @@
   </div>
 </div>
               </a>
-              <a class="navbar-item"> Our Mission </a>
-              <a class="navbar-item"> Contact </a>
+              <a class="navbar-item" href="./assets/html/mission.html"> Our Mission </a>
+              <a class="navbar-item" href="./assets/html/contact.html"> Contact </a>
               <hr class="navbar-divider" />
               <a class="navbar-item"> Report an issue </a>
             </div>
@@ -235,13 +235,19 @@
   <!--Search results-->
   <div id="resultsArea" class="columns">
     <div id="ltDance" class="column">
-<!--place for api to dump dancy giphys-->
+      <div id="ltdpole" class="is-rounded">
+        <iframe id="ltd1" class="has-ratio" width="200" height="200" frameborder="0" allowfullscreen>
+       <!--place for api to dump dancy giphys-->   
+        </iframe>
+      </div>
+
     </div>
     <div id="resultsTitle" class="column is-three-fifths">
       <ul id="resultsListing"></ul>
     </div>
     <div id="rtDance" class="column">
-<!--place for api to dump dancy giphys-->
+   
+
     </div>
   </div>
   </section>

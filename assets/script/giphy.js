@@ -2,6 +2,8 @@
 //my api key
 let MYURL = "https:api.giphy.com/v1/gifs/random?api_key=jWQAGEXCWHKht1K5SNpr8G7WuBeASCoH&tag=dancing&rating=g";
 let ltDance = document.querySelector("#ltDance");
+let ltdPole = document.querySelector("#ltdPole"); 
+let ltd1 = document.querySelector("#ltd1");
 let rtDance = document.querySelector("#rtDance");
 let searchBtn = document.querySelector("#search");
 //let gogo; 
@@ -20,7 +22,7 @@ fetch(MYURL)
 let gogo = data.data.embed_url;
     console.log(gogo);
 
-//   let imageMaker = document.createElement("iframe");
+// let imageMaker = document.createElement("iframe");
   imageMaker.setAttribute("src", gogo);
     console.log(imageMaker);
     ltDance.appendChild(imageMaker);
