@@ -1,92 +1,68 @@
 <!DOCTYPE html>
 <!-- Never let a computer know you're in a hurry -->
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>DaJa-LiMaVi Home</title>
-  </head>
 
-    <!--Top of Nav-->
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="#home"> <!--possibly update this to always link to the home page-->
-          <img id="home" src="./assets/images/DJ header.png" width="112" height="28" />
-        </a>
-        <a
-          role="button"
-          class="navbar-burger"
-          aria-label="menu"
-          aria-expanded="false"
-          data-target="navbarBasicExample"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>DaJa-LiMaVi Home</title>
+</head>
 
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item"> How to use </a>
-
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link"> More </a>
-
-            <div class="navbar-dropdown">
-              <a class="navbar-item" href="./html/team.html"> The Team 
-                <div class="modal">
-  <div class="modal-background"></div>
-  <div class="modal-card">
-    <header class="modal-card-head">
-      <p class="modal-card-title">Modal title</p>
-      <button class="delete" aria-label="close"></button>
-    </header>
-    <section class="modal-card-body">
-      <!-- Content ... -->
-    </section>
-    <footer class="modal-card-foot">
-      <button class="button is-success">Save changes</button>
-      <button class="button">Cancel</button>
-    </footer>
+<!--Top of Nav-->
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="./index.html">
+      <img id="home" src="./assets/images/DJ header.png" width="112" height="28" />
+    </a>
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
   </div>
-</div>
-              </a>
-              <a class="navbar-item"> Our Mission </a>
-              <a class="navbar-item"> Contact </a>
-              <hr class="navbar-divider" />
-              <a class="navbar-item"> Report an issue </a>
-            </div>
-          </div>
-        </div>
 
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <strong id="discover">WHO WILL YOU DISCOVER NEXT?</strong> <!--We should try to make this a randomized search suggestion-->
-          </div>
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="./assets/html/howto.html">How to Use</a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">More</a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="./assets/html/team.html">The Team</a>
+          <a class="navbar-item" href="./assets/html/mission.html">Our Mission</a>
+          <a class="navbar-item" href="./assets/html/contact.html">Contact</a>
+          <hr class="navbar-divider" />
+          <a class="navbar-item" href="./assets/html/reportissue.html">Report an Issue</a>
         </div>
       </div>
-    </nav>
-    <!--end of nav bar-->
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <strong id="discover">WHO WILL YOU DISCOVER NEXT?</strong>
+        <!--We should try to make this a randomized search suggestion in a future enhancement-->
+      </div>
+    </div>
+  </div>
+</nav>
+<!--end of nav bar-->
+
 <body>
-  <div class="searchBG" src="./assets/images/audiocontrols.jpg">
+  <div class="searchBG block" src="./assets/images/audiocontrols.jpg">
     <!-- Search Input -->
     <section class="container is-max-desktop">
       <section class="searchBar">
         <div class="field is-grouped px-5 py-5">
           <p class="control is-expanded">
-            <input id="searchTerm"
-              class="input"
-              type="text"
-              placeholder="Let's explore the music universe"
-            />
+            <input id="searchTerm" class="input" type="text" placeholder="Let's explore the music universe" />
           </p>
           <p class="control">
-            <a title="search" id = "search" class="button is-link is-rounded"> Search </a>
+            <a title="search" id="search" class="button is-link is-rounded"> Search </a>
             <a title="log" id="log" class="button is-link is-rounded"> log </a>
             <!-- lets crank it up to 11 -->
           </p>
@@ -100,129 +76,97 @@
       <section id="gmTray" class="modifiers">
         <div class="field pl-5 is-grouped is-grouped-multiline">
           <p class="control">
-            <a data-genMod 
-              title="Rock" 
-              value="inactive" 
+            <a data-genMod title="Rock" value="inactive"
               class="button is-link is-outlined is-rounded is-light is-focused">
               Rock
             </a>
           </p>
           <p class="control">
-            <a data-genMod
-              title="Metal" 
-              value="inactive" 
+            <a data-genMod title="Metal" value="inactive"
               class="button is-link is-outlined is-rounded is-light is-focused">
               Metal
             </a>
           </p>
           <p class="control">
-            <a data-genMod 
-              title="Punk" 
-              value="inactive" 
+            <a data-genMod title="Punk" value="inactive"
               class="button is-link is-outlined is-rounded is-light is-focused">
               Punk
             </a>
           </p>
           <p class="control">
-            <a data-genMod 
-              title="Hip-Hop/Rap" 
-              value="inactive" 
+            <a data-genMod title="Hip-Hop/Rap" value="inactive"
               class="button is-link is-outlined is-rounded is-light is-focused">
               Hip-Hop/Rap
             </a>
           </p>
           <p class="control">
-            <a data-genMod 
-              title="Pop" 
-              value="inactive" 
+            <a data-genMod title="Pop" value="inactive"
               class="button is-link is-outlined is-rounded is-light is-focused">
               Pop
             </a>
           </p>
           <p class="control">
-            <a data-genMod 
-              title="Country" 
-              value="inactive" 
+            <a data-genMod title="Country" value="inactive"
               class="button is-link is-outlined is-rounded is-light is-focused">
               Country
             </a>
           </p>
           <p class="control">
-            <a data-genMod 
-              title="blues" 
-              value="inactive" 
+            <a data-genMod title="blues" value="inactive"
               class="button is-link is-outlined is-rounded is-light is-focused">
               Blues
             </a>
           </p>
           <p class="control">
-            <a data-genMod 
-              title="Classical" 
-              value="inactive" 
+            <a data-genMod title="Classical" value="inactive"
               class="button is-link is-outlined is-rounded is-light is-focused">
               Classical
             </a>
           </p>
           <p class="control">
-            <a data-genMod 
-              title="Latin" 
-              value="inactive" 
+            <a data-genMod title="Latin" value="inactive"
               class="button is-link is-outlined is-rounded is-light is-focused">
               Latin
             </a>
           </p>
           <p class="control">
-            <a data-genMod 
-              title="Electronic" 
-              value="inactive" 
+            <a data-genMod title="Electronic" value="inactive"
               class="button is-link is-outlined is-rounded is-light is-focused">
               Electronic
             </a>
           </p>
           <p class="control">
-            <a data-genMod 
-              title="Folk" 
-              value="inactive" 
+            <a data-genMod title="Folk" value="inactive"
               class="button is-link is-outlined is-rounded is-light is-focused">
               Folk
             </a>
           </p>
           <p class="control">
-            <a data-genMod 
-              title="World Music" 
-              value="inactive" 
+            <a data-genMod title="World Music" value="inactive"
               class="button is-link is-outlined is-rounded is-light is-focused">
               World Music
             </a>
           </p>
           <p class="control">
-            <a data-genMod 
-              title="Experimental" 
-              value="inactive" 
+            <a data-genMod title="Experimental" value="inactive"
               class="button is-link is-outlined is-rounded is-light is-focused">
               Experimental
             </a>
           </p>
           <p class="control">
-            <a data-genMod 
-              title="Religious" 
-              value="inactive" 
+            <a data-genMod title="Religious" value="inactive"
               class="button is-link is-outlined is-rounded is-light is-focused">
               Religious
             </a>
           </p>
           <p class="control">
-            <a data-genMod 
-              title="Showtunes" 
-              value="inactive" 
+            <a data-genMod title="Showtunes" value="inactive"
               class="button is-link is-outlined is-rounded is-light is-focused">
               Showtunes
             </a>
           </p>
           <p class="control">
-            <a data-genMod 
-              title="Ambient" 
-              value="inactive" 
+            <a data-genMod title="Ambient" value="inactive"
               class="button is-link is-outlined is-rounded is-light is-focused">
               Ambient
             </a>
@@ -230,36 +174,36 @@
         </div>
       </section>
     </section>
+  </div>
     <!--End of Genre Modifier-->
 
-  <!--Search results-->
-  <div id="resultsArea" class="columns">
-    <div id="ltDance" class="column">
-<!--place for api to dump dancy giphys-->
+    <!--Search results-->
+    <div id="resultsArea" class="columns">
+      <div id="ltDance" class="column">
+        <!--place for api to dump dancy giphys-->
+      </div>
+      <div id="results" class="column is-three-fifths">
+        <ul id="resultsListing">
+          <li>test</li>
+        </ul>
+      </div>
+      <div id="rtDance" class="column">
+        <!--place for api to dump dancy giphys-->
+      </div>
     </div>
-    <div id="resultsTitle" class="column is-three-fifths">
-      <ul id="resultsListing"></ul>
-    </div>
-    <div id="rtDance" class="column">
-<!--place for api to dump dancy giphys-->
-    </div>
-  </div>
-  </section>
-  <!--End of Search results-->
-  <!-- script linking section -->
-  <script
-      src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
-      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
-      crossorigin="anonymous">
-  </script>
-  <script src="https://unpkg.com/dayjs-with-plugins"></script>
-  <script
-    src="https://code.jquery.com/jquery-3.6.4.js"
-    integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
-    crossorigin="anonymous">
-  </script>
-  <script type="module" src="./assets/script/script.js"></script>
-  <script type="module" src="./assets/script/mainfetch.js"></script>
-  <script type="module" src="./assets/script/giphy.js"></script>
+    </section>
+    <!--End of Search results-->
+    <!-- script linking section -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous">
+      </script>
+    <script src="https://unpkg.com/dayjs-with-plugins"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+      integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous">
+      </script>
+    <script type="module" src="./assets/script/script.js"></script>
+    <script type="module" src="./assets/script/mainfetch.js"></script>
+    <script type="module" src="./assets/script/giphy.js"></script>
 </body>
+
 </html>
