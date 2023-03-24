@@ -20,13 +20,13 @@ fetch(MYURL)
 let gogo = data.data.embed_url;
     console.log(gogo);
 
-//   let imageMaker = document.createElement("iframe");
+  let imageMaker = document.createElement("iframe");
   imageMaker.setAttribute("src", gogo);
     console.log(imageMaker);
     ltDance.appendChild(imageMaker);
     console.log(ltDance);
 
-    // let imageMaker1 = document.createElement("iframe");
+    let imageMaker1 = document.createElement("iframe");
     imageMaker1.setAttribute("src", gogo);
     rtDance.appendChild(imageMaker1);
     console.log(rtDance);

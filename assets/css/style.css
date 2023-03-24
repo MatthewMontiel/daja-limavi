@@ -1,12 +1,13 @@
 /* styling variables that can be used to sub into the initial html replacements */
 :root {
     --primarylavender: #6c52a2; 
+    --lavendertransparent: rgb(108, 82, 162, 0.5); 
     --orchidhighlight: #9552a2;
     --darkblue: #526ea2;
     --brightblue: #296fca;
-    --silver: #fff;
+    --silver: #fff; /* Matt need the silver tray color for the logo here */
     --white: #fff;
-    /* these are just temporary colors to try and get things to trigger */
+    /* these are just temporary colors to try and get things to trigger while constructing site */
     --construct1: #00FFFF;
     --construct2: #32CD32;
     --construct3: #FF00FF;
@@ -14,12 +15,12 @@
 
 
 
-.searchBG {
+.searchBG { /* styling for the genre modifier search area */
    display: block;
    background-position: center center;
    background-repeat: no-repeat;
    background-attachment: fixed;
-   background-image: url(./audiocontrols.jpg)
+   background-image: url(./audiocontrols.jpg);
 }
 
 .button { /* replacement color override of bulma button */
@@ -32,10 +33,27 @@
     background-color: var(--silver) !important;
     border-color: var(--orchidhighlight) !important;
     color: var(--brightblue) !important;
-
+}
+#resultsArea { /* styling for primary container for results of api fetches */
+    background-image: url(./audiocontrols.jpg);
 }
 
-.results { /* results styling */
-    background-color: var(--construct3);
-    color: var(--construct1);
+#results { /* results area styling */
+    background-color: var(--lavendertransparent) !important;
+    color: var(--white) !important;
+    
+}
+
+.ltDance { /* styling for dancers on left stage */
+    align-items:center;
+    justify-content:space-around;
+    background-color: var(--silver) !important;
+    color: var(--darkblue);
+}
+
+.rtDance { /* styling for dancers on right stage */
+    align-items:center;
+    justify-content:space-around;
+    background-color: var(--silver) !important;
+    color: var(--darkblue);
 }
