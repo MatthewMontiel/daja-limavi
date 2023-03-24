@@ -16,22 +16,20 @@ fetch(MYURL)
 })
 .then(function (data) {
     console.log(data);
-//    let gogo = data.data.bitly_gif_url;
-let gogo = data.data.preview.mp4;
+
+let gogo = data.data.embed_url;
     console.log(gogo);
 
-  let imageMaker = document.createElement("iframe");
+//   let imageMaker = document.createElement("iframe");
   imageMaker.setAttribute("src", gogo);
-//   imageMaker.setAttribute("width","200");
-//   imageMaker.setAttribute("height","200");
-//   imageMaker.setAttribute("frameBorder","0");
-//   imageMaker.setAttribute("class","giphy-embed");
-
-  console.log(imageMaker);
+    console.log(imageMaker);
     ltDance.appendChild(imageMaker);
     console.log(ltDance);
-    rtDance.appendChild(imageMaker);
-        console.log(rtDance);
+
+    // let imageMaker1 = document.createElement("iframe");
+    imageMaker1.setAttribute("src", gogo);
+    rtDance.appendChild(imageMaker1);
+    console.log(rtDance);
 }) 
 }
 
