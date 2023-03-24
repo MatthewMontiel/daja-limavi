@@ -20,7 +20,7 @@
    background-position: center center;
    background-repeat: no-repeat;
    background-attachment: fixed;
-   background-image: url(./audiocontrols.jpg);
+   background-image: url(../images/audiocontrols.jpg);
 }
 
 .button { /* replacement color override of bulma button */
@@ -35,7 +35,7 @@
     color: var(--brightblue) !important;
 }
 #resultsArea { /* styling for primary container for results of api fetches */
-    background-image: url(./audiocontrols.jpg);
+    background-image: url(../images/audiocontrols.jpg);
 }
 
 #results { /* results area styling */
