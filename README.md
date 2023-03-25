@@ -1,52 +1,59 @@
 # Daja-limavi
+## *Table of Contents*
+- [Description](#description)
+- [How to use](#how-to-use)
+- [Features](#features)
+- [Collaborators](#collaborators)
+- [Built With](#built-with)
+- [Future Updates](#future-updates)
+- [License](#license)
+If your README is long, add a table of contents to make it easy for users to find what they need.
 
 ## Progress (or the process) with screenshots
 ![screenshot](./assets/images/thinkboard.png)
 
-## Description
+## *Description*
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+As a user I want to get music recomendations
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+When I input criteria and click partytime
 
-## Table of Contents (Optional)
+Then I am presented with recomendations
 
-If your README is long, add a table of contents to make it easy for users to find what they need.
 
-## How to use/features 
+## *How to use*
 
-Provide instructions and examples for use. Include screenshots as needed.
+To get results from
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
 
 ![alt text](./assets/images/screenshot.png)
 
-## Collaborators
-
-M Vincent Richards, Matt Montiel, Danny Cohen, Jacqueline Martinez, & Lindsey Isaac.
-
+## *Features*
+click giphy words
 
 
-List your collaborators, if any, with links to their GitHub profiles.
+## *Collaborators*
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+***M Vincent Richards*** https://github.com/vrich88<br>
+***Matt Montiel*** https://github.com/MatthewMontiel<br>
+***Danny Cohen*** https://github.com/dctristero<br>
+***Jacqueline Martinez*** https://github.com/JackieAmartinez<br>
+***Lindsey Isaac*** https://github.com/LindseyIsaac
 
-If you followed tutorials, include links to those here as well.
-
-## Built With
+## *Built With*
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. 
 
-## Updates for the future
+## *Future Updates*
 As our class goes on and we learn more we want to come back and implement more of what we learn to improve this sites functionality. 
 -
 -
 -
 -In the end we would like for this project to become an application capable of playing music and not just sourcing them.
 
-## License
+## *License*
 MIT License
 
 Copyright (c) 2023 MatthewMontiel
+
+[def]: #description
