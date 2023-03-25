@@ -36,6 +36,7 @@
 }
 #resultsArea { /* styling for primary container for results of api fetches */
     background-image: url(../images/audiocontrols.jpg);
+    background-repeat: no-repeat;
 }
 
 #results { /* results area styling */
@@ -56,4 +57,12 @@
     justify-content:space-around;
     background-color: var(--silver) !important;
     color: var(--darkblue);
+}
+
+.navbar{
+background: linear-gradient(to left, #03001e, #7303c0, #ec38bc, #fdeff9);
+}
+
+#discover{
+    color:white;
 }
