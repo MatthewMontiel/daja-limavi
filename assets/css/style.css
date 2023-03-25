@@ -9,7 +9,6 @@
     /* these are just temporary colors to try and get things to trigger while constructing site */
     --construct1: #00FFFF;
     --construct2: #32CD32;
-    --construct3: #FF00FF;
 }
 body { /* styling adding the font to the site */
     font-family: Orbitron;
@@ -45,11 +44,18 @@ body { /* styling adding the font to the site */
 }
 #resultsArea { /* styling for primary container for results of api fetches */
     background-image: url(../images/audiocontrols.jpg);
+    background-position: center center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 #results { /* results area styling */
     background-color: var(--lavendertransparent) !important;
-    color: var(--white) !important;
+    padding-top: 2rem;
+    color: var(--brightblue) !important;
+    border-style: ridge;
+    border-width: 2rem;
+    border-color:#ec38bc;
+    border-radius: 4rem;
     
 }
 .ltDance { /* styling for dancers on left stage */
@@ -63,4 +69,16 @@ body { /* styling adding the font to the site */
     justify-content:space-around;
     background-color: var(--silver) !important;
     color: var(--darkblue);
+}
+
+#resultsListing{
+    color: #fff;
+}
+
+#ltdpole{
+    padding-left: 6rem;
+}
+
+#rtdpole{
+    padding-left: 4rem;
 }
