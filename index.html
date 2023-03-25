@@ -8,8 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/reset.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
   <title>DaJa-LiMaVi Home</title>
@@ -57,22 +57,6 @@
 
 <body>
   <div class="searchBG block" src="./assets/images/audiocontrols.jpg">
-    <!-- Search Input -->
-    <section class="container is-max-desktop">
-      <section class="searchBar">
-        <div class="field is-grouped px-5 py-5">
-          <!-- <p class="control is-expanded">
-            <input id="searchTerm" class="input" type="text" placeholder="Let's explore the music universe" />
-          </p> -->
-          <p class="control">
-            <a title="search" id="search" class="button is-link is-rounded"> Search </a>
-            <a title="log" id="log" class="button is-link is-rounded"> log </a>
-            <!-- lets crank it up to 11 -->
-          </p>
-        </div>
-      </section>
-    </section>
-    <!--End of Search Input-->
 
     <!--Genre Modifiers with placeholder initial genres that can be changed-->
     <section class="container is-max-desktop">
@@ -177,6 +161,24 @@
         </div>
       </section>
     </section>
+    <!-- Control Panel -->
+    <section class="container is-max-desktop">
+      <section class="searchBar">
+        <div class="field is-grouped px-5 py-5">
+          <!-- <p class="control is-expanded">
+            <input id="searchTerm" class="input" type="text" placeholder="Let's explore the music universe" />
+          </p> -->
+          <p class="control">
+            <a title="search" id="search" class="button is-link is-rounded is-size-4"> Load Deck </a>
+            <!-- Y'all ready for this -->
+            <a title="log" id="log" class="button is-link is-rounded is-size-4"> Shuffle </a>
+            <!-- lets crank it up to 11 -->
+          </p>
+        </div>
+      </section>
+    </section>
+
+    <!--  -->
   </div>
   <!--End of Genre Modifier-->
 
@@ -185,13 +187,9 @@
     <div id="ltDance" class="column">
       <div id="ltdpole" class="is-rounded">
         <iframe id="ltd1" class="has-ratio" width="200" height="200" frameborder="0" allowfullscreen></iframe>
-
         <iframe id="ltd2" class="has-ratio" width="200" height="200" frameborder="0" allowfullscreen></iframe>
-    
         <iframe id="ltd3" class="has-ratio" width="200" height="200" frameborder="0" allowfullscreen></iframe>
-      
         <iframe id="ltd4" class="has-ratio" width="200" height="200" frameborder="0" allowfullscreen></iframe>
-       
         <iframe id="ltd5" class="has-ratio" width="200" height="200" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
@@ -203,29 +201,25 @@
     <div id="rtDance" class="column">
       <div id="rtdpole" class="is-rounded">
         <iframe id="rtd1" class="has-ratio" width="200" height="200" frameborder="0" allowfullscreen></iframe>
-        
         <iframe id="rtd2" class="has-ratio" width="200" height="200" frameborder="0" allowfullscreen></iframe>
-        
         <iframe id="rtd3" class="has-ratio" width="200" height="200" frameborder="0" allowfullscreen></iframe>
-        
         <iframe id="rtd4" class="has-ratio" width="200" height="200" frameborder="0" allowfullscreen></iframe>
-        
         <iframe id="rtd5" class="has-ratio" width="200" height="200" frameborder="0" allowfullscreen></iframe>
+      </div>
     </div>
-  </div>
-  </section>
-  <!--End of Search results-->
-  <!-- script linking section -->
-  <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
-    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous">
-    </script>
-  <script src="https://unpkg.com/dayjs-with-plugins"></script>
-  <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
-    crossorigin="anonymous">
-    </script>
-  <script type="module" src="./assets/script/script.js"></script>
-  <script type="module" src="./assets/script/mainfetch.js"></script>
-  <script type="module" src="./assets/script/giphy.js"></script>
+    </section>
+    <!--End of Search results-->
+    <!-- script linking section -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous">
+      </script>
+    <script src="https://unpkg.com/dayjs-with-plugins"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+      integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous">
+      </script>
+    <script type="module" src="./assets/script/script.js"></script>
+    <script type="module" src="./assets/script/mainfetch.js"></script>
+    <script type="module" src="./assets/script/giphy.js"></script>
 </body>
 
 </html>
