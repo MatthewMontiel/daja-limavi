@@ -1,7 +1,7 @@
 // giphy.com/jWQAGEXCWHKht1K5SNpr8G7WuBeASCoH
 //zilhn80nBYP7y4EiyPaZdNrLQJxL5bOd
 //my api key
-let MYURL = "https:api.giphy.com/v1/gifs/random?api_key=zilhn80nBYP7y4EiyPaZdNrLQJxL5bOd&tag=dancing&rating=g";
+let MYURL = "https:api.giphy.com/v1/gifs/random?api_key=jWQAGEXCWHKht1K5SNpr8G7WuBeASCoH&tag=dancing&rating=g";
 let ltDance = document.querySelector("#ltDance");
 let ltdpole = document.querySelector("#ltdpole")
 let ltd1 = document.querySelector("#ltd1");
