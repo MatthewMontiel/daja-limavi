@@ -9,7 +9,6 @@
     /* these are just temporary colors to try and get things to trigger while constructing site */
     --construct1: #00FFFF;
     --construct2: #32CD32;
-    --construct3: #FF00FF;
 }
 body { /* styling adding the font to the site */
     font-family: Orbitron;
