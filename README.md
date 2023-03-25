@@ -1,38 +1,39 @@
 # Daja-limavi
 ## *Table of Contents*
 - [Description](#description)
+- [Our Process](#our-process)
 - [How to use](#how-to-use)
-- [Features](#features)
+- [Application](#application)
 - [Collaborators](#collaborators)
 - [Built With](#built-with)
 - [Future Updates](#future-updates)
 - [License](#license)
-- [Deployed application](https://matthewmontiel.github.io/daja-limavi/)
 
-## Progress (or the process) with screenshots
+## Our Process
 
 ![screenshot](./assets/images/thoughts.png)
 
 ## *Description*
 
-As a user I want to get music recommendations
-
-When I input criteria and click partytime
-
-Then I am presented with recommendations
-
+This is a music genre cross reference application to help the user discover music they will like. 
 
 ## *How to use*
 
-To get results from
+As a user I want to get music recommendations<br>
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
+When I input criteria and click load deck<br>
+
+Then I am presented with recommendations<br>
+
+To use please select three genres and press load deck.<br>
+When load deck is pressed the user will then see the shuffle button to get their results.<br>
+When the shuffle button is pressed, some Giphy dancers are deployed as well to party as you find some new music!<br>
+
+## *Application*
 
 ![alt text](./assets/images/screenshot.png)
 
-## *Features*
-click giphy words
-
+- [Deployed application](https://matthewmontiel.github.io/daja-limavi/)
 
 ## *Collaborators*
 
@@ -43,13 +44,13 @@ click giphy words
 ***Lindsey Isaac*** https://github.com/LindseyIsaac
 
 ## *Built With*
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. 
 
+- *Bulma* https://bulma.io/<br>
+- *Wikipedia* API https://www.mediawiki.org/wiki/API<br>
+- *Giphy* API https://developers.giphy.com/<br>
 ## *Future Updates*
 - As our class goes on and we learn more we want to come back and implement more of what we learn to improve this sites functionality. 
-- 
--
--
+- One of the updates will have clearer ways to find artists as well as genres they are in.
 - In the end we would like for this project to become an application capable of playing music and not just sourcing them.
 
 ## *License*
