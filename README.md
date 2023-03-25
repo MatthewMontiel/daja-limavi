@@ -13,12 +13,13 @@ If your README is long, add a table of contents to make it easy for users to fin
 ![screenshot](./assets/images/thinkboard.png)
 
 ## *Description*
+[Deployed application](https://matthewmontiel.github.io/daja-limavi/)
 
-As a user I want to get music recomendations
+As a user I want to get music recommendations
 
 When I input criteria and click partytime
 
-Then I am presented with recomendations
+Then I am presented with recommendations
 
 
 ## *How to use*

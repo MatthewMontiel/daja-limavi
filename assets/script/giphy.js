@@ -17,8 +17,6 @@ let rtd4 = document.querySelector("#rtd4");
 let rtd5 = document.querySelector("#rtd5");
 let searchBtn = document.querySelector("#search");
 
-//let gogo; 
-
 function partyTime() {
     fetch(MYURL)
         .then(function (response) {
@@ -58,4 +56,6 @@ function partyTime() {
 }
 
 //todo: display random giphys on page
-searchBtn.addEventListener('click', partyTime);
+searchBtn.addEventListener('click', function () {
+    partyTime();
+});
