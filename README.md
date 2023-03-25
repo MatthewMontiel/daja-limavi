@@ -7,13 +7,13 @@
 - [Built With](#built-with)
 - [Future Updates](#future-updates)
 - [License](#license)
-If your README is long, add a table of contents to make it easy for users to find what they need.
+- [Deployed application](https://matthewmontiel.github.io/daja-limavi/)
 
 ## Progress (or the process) with screenshots
-![screenshot](./assets/images/thinkboard.png)
+
+![screenshot](./assets/images/thoughts.png)
 
 ## *Description*
-[Deployed application](https://matthewmontiel.github.io/daja-limavi/)
 
 As a user I want to get music recommendations
 
@@ -46,11 +46,11 @@ click giphy words
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. 
 
 ## *Future Updates*
-As our class goes on and we learn more we want to come back and implement more of what we learn to improve this sites functionality. 
+- As our class goes on and we learn more we want to come back and implement more of what we learn to improve this sites functionality. 
+- 
 -
 -
--
--In the end we would like for this project to become an application capable of playing music and not just sourcing them.
+- In the end we would like for this project to become an application capable of playing music and not just sourcing them.
 
 ## *License*
 MIT License
