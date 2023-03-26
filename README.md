@@ -57,5 +57,3 @@ When the shuffle button is pressed, some Giphy dancers are deployed as well to p
 MIT License
 
 Copyright (c) 2023 MatthewMontiel
-
-[def]: #description
