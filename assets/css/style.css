@@ -82,7 +82,7 @@ body { /* styling adding the font to the site */
 #resultsListing li { /* styling for results display tablet area */
     color: #fff;
 }
-.hide {
+.hide { /* styling to hide a container */
     display: none;
 }
 
