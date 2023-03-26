@@ -1,6 +1,8 @@
 // giphy.com/jWQAGEXCWHKht1K5SNpr8G7WuBeASCoH
 //zilhn80nBYP7y4EiyPaZdNrLQJxL5bOd
 //my api key
+
+// global variables
 let MYURL = "https:api.giphy.com/v1/gifs/random?api_key=jWQAGEXCWHKht1K5SNpr8G7WuBeASCoH&tag=dancing&rating=g";
 let ltDance = document.querySelector("#ltDance");
 let ltdpole = document.querySelector("#ltdpole")
@@ -16,47 +18,81 @@ let rtd2 = document.querySelector("#rtd2");
 let rtd3 = document.querySelector("#rtd3");
 let rtd4 = document.querySelector("#rtd4");
 let rtd5 = document.querySelector("#rtd5");
-let searchBtn = document.querySelector("#search");
+let shuffleBtn = document.querySelector("#log")
+let LoadDeckBtn = document.querySelector("#search");
 
+// functions
+// function to get the dancers to the party
 function partyTime() {
     fetch(MYURL)
         .then(function (response) {
             if (response.status == 200) {
-                console.log(response);
+                // console.log(response);
                 return response.json();
             }
         })
         .then(function (data) {
-            console.log(data);
-
+            // console.log(data);
+            // variable to store giphy image to be written to page in dancers spots
             let gogo = data.data.embed_url;
-            console.log(gogo);
-
+            // console.log(gogo);
+            // left dancer side spots 1-5
             ltd1.setAttribute("src", gogo);
-            console.log(ltd1);
+            // console.log(ltd1);
             ltd2.setAttribute("src", gogo);
-            console.log(ltd2);
+            // console.log(ltd2);
             ltd3.setAttribute("src", gogo);
-            console.log(ltd3);
+            // console.log(ltd3);
             ltd4.setAttribute("src", gogo);
-            console.log(ltd4);
+            // console.log(ltd4);
             ltd5.setAttribute("src", gogo);
-            console.log(ltd5);
-
+            // console.log(ltd5);
+            // right dancer side spots 1-5
             rtd1.setAttribute("src", gogo);
-            console.log(rtd1);
+            // console.log(rtd1);
             rtd2.setAttribute("src", gogo);
-            console.log(rtd2);
+            // console.log(rtd2);
             rtd3.setAttribute("src", gogo);
-            console.log(rtd3);
+            // console.log(rtd3);
             rtd4.setAttribute("src", gogo);
-            console.log(rtd4);
+            // console.log(rtd4);
             rtd5.setAttribute("src", gogo);
-            console.log(rtd5);
+            // console.log(rtd5);
         })
 }
+// function to reset dancers
+function partysOver() {
+    let gogo = " ";
+    // console.log(gogo);
+    // left dancer side spots 1-5
+    ltd1.setAttribute("src", gogo);
+    // console.log(ltd1);
+    ltd2.setAttribute("src", gogo);
+    // console.log(ltd2);
+    ltd3.setAttribute("src", gogo);
+    // console.log(ltd3);
+    ltd4.setAttribute("src", gogo);
+    // console.log(ltd4);
+    ltd5.setAttribute("src", gogo);
+    // console.log(ltd5);
+    // right dancer side spots 1-5
+    rtd1.setAttribute("src", gogo);
+    // console.log(rtd1);
+    rtd2.setAttribute("src", gogo);
+    // console.log(rtd2);
+    rtd3.setAttribute("src", gogo);
+    // console.log(rtd3);
+    rtd4.setAttribute("src", gogo);
+    // console.log(rtd4);
+    rtd5.setAttribute("src", gogo);
+    // console.log(rtd5);
+}
 
-//todo: display random giphys on page
-searchBtn.addEventListener('click', function () {
+// eventlistener to call partyTime function
+shuffleBtn.addEventListener('click', function () {
     partyTime();
+});
+// eventlistener to call partysOver function
+LoadDeckBtn.addEventListener('click', function () {
+    partysOver();
 });

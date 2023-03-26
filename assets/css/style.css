@@ -39,7 +39,7 @@ body { /* styling adding the font to the site */
     background-attachment: fixed;
     background-image: url(../images/audiocontrols.jpg);
 }
-.searchBar{
+.searchBar{ /* styling for the Load Deck & Shuffle buttons */
     padding: 25px 0px;
 }
 #resultsArea { /* styling for primary container for results of api fetches */
@@ -56,7 +56,6 @@ body { /* styling adding the font to the site */
     border-width: 2rem;
     border-color:#ec38bc;
     border-radius: 4rem;
-    
 }
 .ltDance { /* styling for dancers on left stage */
     align-items:center;
@@ -64,21 +63,21 @@ body { /* styling adding the font to the site */
     background-color: var(--silver) !important;
     color: var(--darkblue);
 }
+#ltdpole { /* centering for left dancers */
+    padding-left: 6rem;
+}
 .rtDance { /* styling for dancers on right stage */
     align-items:center;
     justify-content:space-around;
     background-color: var(--silver) !important;
     color: var(--darkblue);
 }
-
-#resultsListing{
+#rtdpole { /* centering for right dancers */
+    padding-left: 4rem;
+}
+#resultsListing li { /* styling for results display tablet area */
     color: #fff;
 }
-
-#ltdpole{
-    padding-left: 6rem;
-}
-
-#rtdpole{
-    padding-left: 4rem;
+.hide {
+    display: none;
 }
