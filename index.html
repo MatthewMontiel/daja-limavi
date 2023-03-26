@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <!-- Never let a computer know you're in a hurry -->
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,8 +13,7 @@
   <link rel="stylesheet" href="./assets/css/style.css" />
   <title>DaJa-LiMaVi Home</title>
 </head>
-
-<!--Top of Nav-->
+<!-- Top of Nav -->
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="./index.html">
@@ -27,39 +25,43 @@
       <span aria-hidden="true"></span>
     </a>
   </div>
-
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
+      <!-- Link for long format instructions -->
       <a class="navbar-item" href="./assets/html/howto.html">How to Use</a>
-
       <div class="navbar-item has-dropdown is-hoverable">
+        <!-- Drop down list to links for other parts of the site -->
         <a class="navbar-link">More</a>
-
         <div class="navbar-dropdown">
+          <!-- Link to Development Team info -->
           <a class="navbar-item" href="./assets/html/team.html">The Team</a>
+          <!-- Link to Mission Statement -->
           <a class="navbar-item" href="./assets/html/mission.html">Our Mission</a>
+          <!-- Link to Contact info -->
           <a class="navbar-item" href="./assets/html/contact.html">Contact</a>
           <hr class="navbar-divider" />
+          <!-- Link to Report Issues -->
           <a class="navbar-item" href="./assets/html/reportissue.html">Report an Issue</a>
         </div>
       </div>
     </div>
-
     <div class="navbar-end">
       <div class="navbar-item">
+        <!-- We should try to make "#discover" a randomized search suggestion in a future enhancement -->
         <strong id="discover">WHO WILL YOU DISCOVER NEXT?</strong>
-        <!--We should try to make this a randomized search suggestion in a future enhancement-->
       </div>
     </div>
   </div>
 </nav>
 <!--end of nav bar-->
-
 <body>
+  <!-- Primary container for background image -->
   <div class="searchBG " src="./assets/images/audiocontrols.jpg">
-
-    <!--Genre Modifiers with placeholder initial genres that can be changed-->
+    <!-- Genre Modifiers for user selection -->
     <section class="container is-max-desktop">
+      <p id="basicInstruct">
+        Select up to three (3) genres to Load into the tape Deck to see where there is overlap of artists that may be of interest to you:
+      </p>
       <section id="gmTray" class="modifiers">
         <div class="field pl-5 is-grouped is-grouped-multiline">
           <p class="control">
@@ -160,29 +162,26 @@
           </p>
         </div>
       </section>
+      <!-- End of Genre Modifier -->
     </section>
-    <!-- Control Panel -->
-    <section class="container is-max-desktop">
+    <!-- Tape Deck to Load user inputs and Shuffle for cross over of genre interest -->
+    <section class="container is-centered is-max-desktop">
       <section class="searchBar">
-        <div class="field is-grouped px-5 py-5">
+        <!-- <div class="field px-5 py-5"> -->
           <!-- <p class="control is-expanded">
             <input id="searchTerm" class="input" type="text" placeholder="Let's explore the music universe" />
           </p> -->
           <p class="control">
             <a title="search" id="search" class="button is-link is-rounded is-size-4"> Load Deck </a>
             <!-- Y'all ready for this -->
-            <a title="log" id="log" class="button is-link is-rounded is-size-4"> Shuffle </a>
-            <!-- lets crank it up to 11 -->
+            <a title="log" id="log" class="button is-link is-rounded is-size-4 hide"> Shuffle </a>
+            <!-- Lets crank it up to 11 -->
           </p>
         </div>
       </section>
     </section>
-
-    <!--  -->
   </div>
-  <!--End of Genre Modifier-->
-
-  <!--Search results-->
+  <!-- Search Results Tablet -->
   <div id="resultsArea" class="columns">
     <div id="ltDance" class="column">
       <div id="ltdpole" class="is-rounded">
@@ -194,6 +193,8 @@
       </div>
     </div>
     <div id="results" class="column is-three-fifths">
+      <div id="displayGenres">
+      </div>
       <ul id="resultsListing">
         <li>test</li>
       </ul>
@@ -209,6 +210,10 @@
     </div>
     </section>
     <!--End of Search results-->
+    <!-- Footer notes/citation/acknowledgements -->
+    <footer>
+
+    </footer>
     <!-- script linking section -->
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
       integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous">
@@ -221,5 +226,4 @@
     <script type="module" src="./assets/script/mainfetch.js"></script>
     <script type="module" src="./assets/script/giphy.js"></script>
 </body>
-
 </html>
