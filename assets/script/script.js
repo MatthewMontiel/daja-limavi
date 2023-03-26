@@ -1,5 +1,5 @@
 // import variables 
-import outputArray from "./mainfetch.js";
+// import outputArray from "./mainfetch.js";
 // global variables
 let userSearch = document.querySelector("#searchTerm");
 let resultsListing = document.querySelector("#resultsListing");
@@ -46,9 +46,12 @@ $(shuffleBtn).click(function (event) {
 });
 // function to print the outputArray from Shuffle fetch
 function printShuffle() {
+  var outputArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
   for (var i = 0; i < outputArray.length; i++) {
     var suggestion = document.createElement("li");
-    suggestion.classList.add();
+    suggestion.innerHTML = outputArray[i];
+    // console.log(suggestion);
+    // suggestion.classList.add(); /* if we need to add classes for styling */
     resultsListing.appendChild(suggestion);
   }
 }
