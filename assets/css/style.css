@@ -30,7 +30,7 @@ body { /* styling adding the font to the site */
     color: var(--brightblue) !important;
 }
 
-.modifiers {
+.modifiers { /* styling to add padding around genre buttons */
     padding: 25px 0px;
 }
 .searchBG { /* styling for the genre modifier search area */
@@ -55,7 +55,8 @@ body { /* styling adding the font to the site */
 #results { /* results area styling */
     background-color: var(--lavendertransparent) !important;
     padding-top: 2rem;
-    color: var(--brightblue) !important;
+    color: #fff !important;
+    text-shadow: 3px 3px var(--brightblue) !important;
     border-style: ridge;
     border-width: 2rem;
     border-color: #7303c0;
@@ -80,13 +81,14 @@ body { /* styling adding the font to the site */
     padding-left: 4rem;
 }
 #resultsListing li { /* styling for results display tablet area */
-    color: #fff;
+    color: #fff !important;
+    text-shadow: 3px 3px 5px var(--brightblue) !important;
 }
 .hide { /* styling to hide a container */
     display: none;
 }
 
-#basicInstruct {
+#basicInstruct { /* styling for basic instructions of using DaJa-LiMaVi */
     background-color: var(--lavendertransparent) !important;
     padding-top: 2rem;
     padding-bottom: 2rem;
