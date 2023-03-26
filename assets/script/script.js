@@ -1,5 +1,5 @@
 // import variables 
-// import results from "./mainfetch";
+import outputArray from "./mainfetch.js";
 // global variables
 let userSearch = document.querySelector("#searchTerm");
 let resultsListing = document.querySelector("#resultsListing");
@@ -40,10 +40,18 @@ $(loadDeckBtn).click(function (event) {
 });
 // function to switch Load Deck & Shuffle buttons and clear activeGMods to search results Tablet
 $(shuffleBtn).click(function (event) {
+  printShuffle();
   loadDeckBtn.classList.toggle("hide");
   shuffleBtn.classList.toggle("hide");
 });
-
+// function to print the outputArray from Shuffle fetch
+function printShuffle() {
+  for (var i = 0; i < outputArray.length; i++) {
+    var suggestion = document.createElement("li");
+    suggestion.classList.add();
+    resultsListing.appendChild(suggestion);
+  }
+}
 
 // export variables 
 export default activeGMods;
