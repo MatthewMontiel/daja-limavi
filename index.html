@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <!-- Never let a computer know you're in a hurry -->
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -54,44 +55,22 @@
   </div>
 </nav>
 <!--end of nav bar-->
+
 <body>
   <!-- Primary container for background image -->
   <div class="searchBG " src="./assets/images/audiocontrols.jpg">
     <!-- Genre Modifiers for user selection -->
     <section class="container is-max-desktop">
       <p id="basicInstruct">
-        Select up to three (3) genres to Load into the tape Deck to see where there is overlap of artists that may be of interest to you:
+        Select up to three (3) genres to Load into the tape Deck to see where there is overlap of artists that may be of
+        interest to you:
       </p>
       <section id="gmTray" class="modifiers">
         <div class="field pl-5 is-grouped is-grouped-multiline">
           <p class="control">
-            <a data-genMod title="Rock" value="inactive"
-              class="button is-link is-outlined is-rounded is-light is-focused">
-              Rock
-            </a>
-          </p>
-          <p class="control">
-            <a data-genMod title="Metal" value="inactive"
-              class="button is-link is-outlined is-rounded is-light is-focused">
-              Metal
-            </a>
-          </p>
-          <p class="control">
             <a data-genMod title="Punk" value="inactive"
               class="button is-link is-outlined is-rounded is-light is-focused">
               Punk
-            </a>
-          </p>
-          <p class="control">
-            <a data-genMod title="Hip-Hop/Rap" value="inactive"
-              class="button is-link is-outlined is-rounded is-light is-focused">
-              Hip-Hop/Rap
-            </a>
-          </p>
-          <p class="control">
-            <a data-genMod title="Pop" value="inactive"
-              class="button is-link is-outlined is-rounded is-light is-focused">
-              Pop
             </a>
           </p>
           <p class="control">
@@ -104,6 +83,43 @@
             <a data-genMod title="blues" value="inactive"
               class="button is-link is-outlined is-rounded is-light is-focused">
               Blues
+            </a>
+          </p>
+          <p class="control">
+            <a data-genMod title="Folk" value="inactive"
+              class="button is-link is-outlined is-rounded is-light is-focused">
+              Folk
+            </a>
+          </p>
+          <p class="control">
+            <a data-genMod title="Psychedelic" value="inactive"
+              class="button is-link is-outlined is-rounded is-light is-focused">
+              Psychedelic
+            </a>
+          </p>
+          <p class="control">
+            <a data-genMod title="Pop" value="inactive"
+              class="button is-link is-outlined is-rounded is-light is-focused">
+              Pop
+            </a>
+          </p>
+          <p class="control">
+            <a data-genMod title="Metal" value="inactive"
+              class="button is-link is-outlined is-rounded is-light is-focused">
+              Metal
+            </a>
+          </p>
+          <!-- Future expansion for more genres
+          <p class="control">
+            <a data-genMod title="Rock" value="inactive"
+              class="button is-link is-outlined is-rounded is-light is-focused">
+              Rock
+            </a>
+          </p>
+          <p class="control">
+            <a data-genMod title="Hip-Hop/Rap" value="inactive"
+              class="button is-link is-outlined is-rounded is-light is-focused">
+              Hip-Hop/Rap
             </a>
           </p>
           <p class="control">
@@ -122,12 +138,6 @@
             <a data-genMod title="Electronic" value="inactive"
               class="button is-link is-outlined is-rounded is-light is-focused">
               Electronic
-            </a>
-          </p>
-          <p class="control">
-            <a data-genMod title="Folk" value="inactive"
-              class="button is-link is-outlined is-rounded is-light is-focused">
-              Folk
             </a>
           </p>
           <p class="control">
@@ -160,6 +170,7 @@
               Ambient
             </a>
           </p>
+          End of Future expansion for more genres -->
         </div>
       </section>
       <!-- End of Genre Modifier -->
@@ -168,18 +179,18 @@
     <section class="container is-centered is-max-desktop">
       <section class="searchBar">
         <!-- <div class="field px-5 py-5"> -->
-          <!-- <p class="control is-expanded">
+        <!-- <p class="control is-expanded">
             <input id="searchTerm" class="input" type="text" placeholder="Let's explore the music universe" />
           </p> -->
-          <p class="control">
-            <a title="search" id="search" class="button is-link is-rounded is-size-4"> Load Deck </a>
-            <!-- Y'all ready for this -->
-            <a title="log" id="log" class="button is-link is-rounded is-size-4 hide"> Shuffle </a>
-            <!-- Lets crank it up to 11 -->
-          </p>
-        </div>
-      </section>
-    </section>
+        <p class="control">
+          <a title="search" id="search" class="button is-link is-rounded is-size-4"> Load Deck </a>
+          <!-- Y'all ready for this -->
+          <a title="log" id="log" class="button is-link is-rounded is-size-4 hide"> Shuffle </a>
+          <!-- Lets crank it up to 11 -->
+        </p>
+  </div>
+  </section>
+  </section>
   </div>
   <!-- Search Results Tablet -->
   <div id="resultsArea" class="columns">
@@ -212,7 +223,12 @@
     <!--End of Search results-->
     <!-- Footer notes/citation/acknowledgements -->
     <footer>
-
+      <div>
+        wikipedia
+      </div>
+      <div>
+        giphy
+      </div>
     </footer>
     <!-- script linking section -->
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
@@ -226,4 +242,5 @@
     <script type="module" src="./assets/script/mainfetch.js"></script>
     <script type="module" src="./assets/script/giphy.js"></script>
 </body>
+
 </html>
