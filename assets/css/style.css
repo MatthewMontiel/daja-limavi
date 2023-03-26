@@ -98,3 +98,8 @@ body { /* styling adding the font to the site */
     border-color: #ec38bc;
     border-radius: 4rem;
 }
+
+.teamPic{
+    position: center center;
+    background: linear-gradient(to top, #03001e, #7303c0, #ec38bc, #fdeff9);
+}
