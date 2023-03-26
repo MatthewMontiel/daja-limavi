@@ -40,21 +40,21 @@ $(loadDeckBtn).click(function (event) {
 });
 // function to switch Load Deck & Shuffle buttons and clear activeGMods to search results Tablet
 $(shuffleBtn).click(function (event) {
-  printShuffle();
+  // printShuffle();
   loadDeckBtn.classList.toggle("hide");
   shuffleBtn.classList.toggle("hide");
 });
 // function to print the outputArray from Shuffle fetch
-function printShuffle() {
-  var outputArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-  for (var i = 0; i < outputArray.length; i++) {
-    var suggestion = document.createElement("li");
-    suggestion.innerHTML = outputArray[i];
-    // console.log(suggestion);
-    // suggestion.classList.add(); /* if we need to add classes for styling */
-    resultsListing.appendChild(suggestion);
-  }
-}
+// function printShuffle() {
+//   var outputArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+//   for (var i = 0; i < outputArray.length; i++) {
+//     var suggestion = document.createElement("li");
+//     suggestion.innerHTML = outputArray[i];
+//     // console.log(suggestion);
+//     // suggestion.classList.add(); /* if we need to add classes for styling */
+//     resultsListing.appendChild(suggestion);
+//   }
+// }
 
 // export variables 
 export default activeGMods;

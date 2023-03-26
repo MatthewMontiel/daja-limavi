@@ -13,6 +13,7 @@ let sortArray1;
 let sortArray2;
 let sortArray3;
 let outputArray = [];
+let resultsListing = document.querySelector("#resultsListing");
 
 // Genre Let declarations
 let bluesArray;
@@ -182,9 +183,10 @@ function compare() {
   };
   // console.log(sortArray1);
   if (genreArray[1]) {
-  for (var j = 0; j < sortArray2.length; j++) {
-    sortArray2.splice(j, 1, sortArray2[j]["*"]);
-  };};
+    for (var j = 0; j < sortArray2.length; j++) {
+      sortArray2.splice(j, 1, sortArray2[j]["*"]);
+    };
+  };
   // console.log(sortArray2);
 
   if (genreArray[2]) {
@@ -207,9 +209,10 @@ function compare() {
       };
     };
   } else {
-    outputArray=sortArray1;
+    outputArray = sortArray1;
   };
   console.log(outputArray);
+  printShuffle();
 }
 
 
@@ -265,21 +268,21 @@ function getBlues() {
             })
             .then(function (countryBlues) {
               fetch(punkBluesUrl)
-              .then(function (response) {
-                if (response.status == 200) {
-                  return response.json();
-                }
-              })
-              .then(function (punkBlues) {
-                let bluesPiece1 = blues.parse.links;
-                let bluesPiece2 = bluesRock.parse.links;
-                let bluesPiece3 = countryBlues.parse.links;
-                let bluesPiece4 = punkBlues.parse.links;
-                bluesArray = bluesPiece1.concat(bluesPiece2, bluesPiece3, bluesPiece4);
-        });        
+                .then(function (response) {
+                  if (response.status == 200) {
+                    return response.json();
+                  }
+                })
+                .then(function (punkBlues) {
+                  let bluesPiece1 = blues.parse.links;
+                  let bluesPiece2 = bluesRock.parse.links;
+                  let bluesPiece3 = countryBlues.parse.links;
+                  let bluesPiece4 = punkBlues.parse.links;
+                  bluesArray = bluesPiece1.concat(bluesPiece2, bluesPiece3, bluesPiece4);
+                });
+            });
         });
-        });
-        });
+    });
 
 }
 
@@ -306,31 +309,31 @@ function getCountry() {
             })
             .then(function (countryBlues) {
               fetch(psychobillyUrl)
-              .then(function (response) {
-                if (response.status == 200) {
-                  return response.json();
-                }
-              })
-              .then(function (psychobilly) {
-                fetch(countryRockUrl)
                 .then(function (response) {
                   if (response.status == 200) {
                     return response.json();
                   }
                 })
-                .then(function (countryRock) {
-                
-                let countryPiece1 = country.parse.links;
-                let countryPiece2 = altCountry.parse.links;
-                let countryPiece3 = countryBlues.parse.links;
-                let countryPiece4 = psychobilly.parse.links;
-                let countryPiece5 = countryRock.parse.links;
-                countryArray = countryPiece1.concat(countryPiece2, countryPiece3, countryPiece4, countryPiece5);
+                .then(function (psychobilly) {
+                  fetch(countryRockUrl)
+                    .then(function (response) {
+                      if (response.status == 200) {
+                        return response.json();
+                      }
+                    })
+                    .then(function (countryRock) {
+
+                      let countryPiece1 = country.parse.links;
+                      let countryPiece2 = altCountry.parse.links;
+                      let countryPiece3 = countryBlues.parse.links;
+                      let countryPiece4 = psychobilly.parse.links;
+                      let countryPiece5 = countryRock.parse.links;
+                      countryArray = countryPiece1.concat(countryPiece2, countryPiece3, countryPiece4, countryPiece5);
+                    });
+                });
+            });
         });
-        });        
-        });
-        });
-        });
+    });
 
 }
 
@@ -357,21 +360,21 @@ function getFolk() {
             })
             .then(function (psychedelicFolk) {
               fetch(folkMetalUrl)
-              .then(function (response) {
-                if (response.status == 200) {
-                  return response.json();
-                }
-              })
-              .then(function (folkMetal) {
-                let folkPiece1 = folk.parse.links;
-                let folkPiece2 = folkRock.parse.links;
-                let folkPiece3 = psychedelicFolk.parse.links;
-                let folkPiece4 = folkMetal.parse.links;
-                folkArray = folkPiece1.concat(folkPiece2, folkPiece3, folkPiece4);
-        });        
+                .then(function (response) {
+                  if (response.status == 200) {
+                    return response.json();
+                  }
+                })
+                .then(function (folkMetal) {
+                  let folkPiece1 = folk.parse.links;
+                  let folkPiece2 = folkRock.parse.links;
+                  let folkPiece3 = psychedelicFolk.parse.links;
+                  let folkPiece4 = folkMetal.parse.links;
+                  folkArray = folkPiece1.concat(folkPiece2, folkPiece3, folkPiece4);
+                });
+            });
         });
-        });
-        });
+    });
 
 }
 
@@ -399,38 +402,38 @@ function getMetal() {
             })
             .then(function (altMetal) {
               fetch(metalCoreUrl)
-              .then(function (response) {
-                if (response.status == 200) {
-                  return response.json();
-                }
-              })
-              .then(function (metalCore) {
-                fetch(thrashMetalUrl)
                 .then(function (response) {
                   if (response.status == 200) {
                     return response.json();
                   }
                 })
-                .then(function (thrashMetal) {
-                  fetch(progMetalUrl)
-                  .then(function (response) {
-                    if (response.status == 200) {
-                      return response.json();
-                    }
-                  })
-                  .then(function (progMetal) {
-                let metalPiece1 = metal.parse.links;
-                let metalPiece2 = folkMetal.parse.links;
-                let metalPiece3 = altMetal.parse.links;
-                let metalPiece4 = metalCore.parse.links;
-                let metalPiece5 = thrashMetal.parse.links;
-                let metalPiece6 = progMetal.parse.links;
-                metalArray = metalPiece1.concat(metalPiece2, metalPiece3, metalPiece4, metalPiece5, metalPiece6);
-          // console.log(punkArray)
-        });
-        });        
-        });
-        });
+                .then(function (metalCore) {
+                  fetch(thrashMetalUrl)
+                    .then(function (response) {
+                      if (response.status == 200) {
+                        return response.json();
+                      }
+                    })
+                    .then(function (thrashMetal) {
+                      fetch(progMetalUrl)
+                        .then(function (response) {
+                          if (response.status == 200) {
+                            return response.json();
+                          }
+                        })
+                        .then(function (progMetal) {
+                          let metalPiece1 = metal.parse.links;
+                          let metalPiece2 = folkMetal.parse.links;
+                          let metalPiece3 = altMetal.parse.links;
+                          let metalPiece4 = metalCore.parse.links;
+                          let metalPiece5 = thrashMetal.parse.links;
+                          let metalPiece6 = progMetal.parse.links;
+                          metalArray = metalPiece1.concat(metalPiece2, metalPiece3, metalPiece4, metalPiece5, metalPiece6);
+                          // console.log(punkArray)
+                        });
+                    });
+                });
+            });
         });
     });
 
@@ -459,31 +462,31 @@ function getPop() {
             })
             .then(function (indiePop) {
               fetch(powerPopUrl)
-              .then(function (response) {
-                if (response.status == 200) {
-                  return response.json();
-                }
-              })
-              .then(function (powerPop) {
-                fetch(popPunkUrl)
                 .then(function (response) {
                   if (response.status == 200) {
                     return response.json();
                   }
                 })
-                .then(function (popPunk) {
-                
-                let popPiece1 = dancePop.parse.links;
-                let popPiece2 = psychedelicPop.parse.links;
-                let popPiece3 = indiePop.parse.links;
-                let popPiece4 = powerPop.parse.links;
-                let popPiece5 = popPunk.parse.links;
-                popArray = popPiece1.concat(popPiece2, popPiece3, popPiece4, popPiece5);
+                .then(function (powerPop) {
+                  fetch(popPunkUrl)
+                    .then(function (response) {
+                      if (response.status == 200) {
+                        return response.json();
+                      }
+                    })
+                    .then(function (popPunk) {
+
+                      let popPiece1 = dancePop.parse.links;
+                      let popPiece2 = psychedelicPop.parse.links;
+                      let popPiece3 = indiePop.parse.links;
+                      let popPiece4 = powerPop.parse.links;
+                      let popPiece5 = popPunk.parse.links;
+                      popArray = popPiece1.concat(popPiece2, popPiece3, popPiece4, popPiece5);
+                    });
+                });
+            });
         });
-        });        
-        });
-        });
-        });
+    });
 
 }
 
@@ -510,37 +513,37 @@ function getPunk() {
             })
             .then(function (punkBlues) {
               fetch(psychobillyUrl)
-              .then(function (response) {
-                if (response.status == 200) {
-                  return response.json();
-                }
-              })
-              .then(function (psychobilly) {
-                fetch(hardcoreUrl)
                 .then(function (response) {
                   if (response.status == 200) {
                     return response.json();
                   }
                 })
-                .then(function (hardcore) {
-                  fetch(popPunkUrl)
-                  .then(function (response) {
-                    if (response.status == 200) {
-                      return response.json();
-                    }
-                  })
-                  .then(function (popPunk) {
-                let punkPiece1 = punk1.parse.links;
-                let punkPiece2 = punk2.parse.links;
-                let punkPiece3 = punkBlues.parse.links;
-                let punkPiece4 = psychobilly.parse.links;
-                let punkPiece5 = hardcore.parse.links;
-                let punkPiece6 = popPunk.parse.links;
-                punkArray = punkPiece1.concat(punkPiece2, punkPiece3, punkPiece4, punkPiece5, punkPiece6);
-        });
-        });        
-        });
-        });
+                .then(function (psychobilly) {
+                  fetch(hardcoreUrl)
+                    .then(function (response) {
+                      if (response.status == 200) {
+                        return response.json();
+                      }
+                    })
+                    .then(function (hardcore) {
+                      fetch(popPunkUrl)
+                        .then(function (response) {
+                          if (response.status == 200) {
+                            return response.json();
+                          }
+                        })
+                        .then(function (popPunk) {
+                          let punkPiece1 = punk1.parse.links;
+                          let punkPiece2 = punk2.parse.links;
+                          let punkPiece3 = punkBlues.parse.links;
+                          let punkPiece4 = psychobilly.parse.links;
+                          let punkPiece5 = hardcore.parse.links;
+                          let punkPiece6 = popPunk.parse.links;
+                          punkArray = punkPiece1.concat(punkPiece2, punkPiece3, punkPiece4, punkPiece5, punkPiece6);
+                        });
+                    });
+                });
+            });
         });
     });
 
@@ -569,24 +572,34 @@ function getPsychedelic() {
             })
             .then(function (psychedelicFolk) {
               fetch(psychedelicPopUrl)
-              .then(function (response) {
-                if (response.status == 200) {
-                  return response.json();
-                }
-              })
-              .then(function (psychedelicPop) {
-                let psychedelicPiece1 = psychedelicRock.parse.links;
-                let psychedelicPiece2 = acidRock.parse.links;
-                let psychedelicPiece3 = psychedelicFolk.parse.links;
-                let psychedelicPiece4 = psychedelicPop.parse.links;
-                psychedelicArray = psychedelicPiece1.concat(psychedelicPiece2, psychedelicPiece3, psychedelicPiece4);
-        });        
+                .then(function (response) {
+                  if (response.status == 200) {
+                    return response.json();
+                  }
+                })
+                .then(function (psychedelicPop) {
+                  let psychedelicPiece1 = psychedelicRock.parse.links;
+                  let psychedelicPiece2 = acidRock.parse.links;
+                  let psychedelicPiece3 = psychedelicFolk.parse.links;
+                  let psychedelicPiece4 = psychedelicPop.parse.links;
+                  psychedelicArray = psychedelicPiece1.concat(psychedelicPiece2, psychedelicPiece3, psychedelicPiece4);
+                });
+            });
         });
-        });
-        });
+    });
 
 }
 
+// function to print the outputArray from Shuffle fetch
+function printShuffle() {
+  for (var i = 0; i < outputArray.length; i++) {
+    var suggestion = document.createElement("li");
+    suggestion.innerHTML = outputArray[i];
+    // console.log(suggestion);
+    // suggestion.classList.add(); /* if we need to add classes for styling */
+    resultsListing.appendChild(suggestion);
+  }
+}
 
 
 
