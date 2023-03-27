@@ -5,8 +5,6 @@
     --orchidhighlight: #9552a2;
     --darkblue: #526ea2;
     --brightblue: #296fca;
-    --silver: #fff;
-    /* Matt need the silver tray color for the logo here */
     --white: #fff;
 }
 
@@ -25,16 +23,30 @@ body {
     color: white;
 }
 
+#basicInstruct {
+    /* styling for basic instructions of using DaJa-LiMaVi */
+    background-color: var(--lavendertransparent) !important;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: var(--white) !important;
+    font-size: x-large;
+    text-align: center;
+    border-style: ridge;
+    border-width: 1rem;
+    border-color: #ec38bc;
+    border-radius: 4rem;
+}
+
 .button {
     /* replacement color override of bulma button */
     background-color: var(--primarylavender) !important;
     border-color: var(--darkblue) !important;
-    color: var(--silver) !important;
+    color: var(--white) !important;
 }
 
 .button:hover {
     /* replacement color override of bulma button */
-    background-color: var(--silver) !important;
+    background-color: var(--white) !important;
     border-color: var(--orchidhighlight) !important;
     color: var(--brightblue) !important;
 }
@@ -67,6 +79,17 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    padding-bottom: 3rem;
+}
+
+#djemoji {
+    /* styling for the dj logo in tablet */
+    padding-left: 1rem;
+}
+
+#displayGenres {
+    /* styling for displaying selected genre mods */
+    padding-left: 1rem;
 }
 
 #results {
@@ -85,7 +108,7 @@ body {
     /* styling for dancers on left stage */
     align-items: center;
     justify-content: space-around;
-    background-color: var(--silver) !important;
+    background-color: var(--white) !important;
     color: var(--darkblue);
 }
 
@@ -98,7 +121,7 @@ body {
     /* styling for dancers on right stage */
     align-items: center;
     justify-content: space-around;
-    background-color: var(--silver) !important;
+    background-color: var(--white) !important;
     color: var(--darkblue);
 }
 
@@ -111,25 +134,13 @@ body {
     /* styling for results display tablet area */
     color: #fff !important;
     text-shadow: 3px 3px 5px var(--brightblue) !important;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
 }
 
 .hide {
     /* styling to hide a container */
     display: none;
-}
-
-#basicInstruct {
-    /* styling for basic instructions of using DaJa-LiMaVi */
-    background-color: var(--lavendertransparent) !important;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    color: white !important;
-    font-size: x-large;
-    text-align: center;
-    border-style: ridge;
-    border-width: 1rem;
-    border-color: #ec38bc;
-    border-radius: 4rem;
 }
 
 .teamPic {
@@ -147,12 +158,13 @@ body {
     font-family: Orbitron;
 }
 
-.footer{
+.footer {
     padding-bottom: 1rem;
     padding-top: 2
 }
 
-.howTo, .missionState {
+.howTo,
+.missionState {
     padding-left: 10rem;
     padding-right: 10rem;
     padding-top: 2rem;
@@ -162,4 +174,3 @@ body {
     padding-left: 33rem;
     padding-top: 8rem;
 }
-

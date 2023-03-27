@@ -37,7 +37,7 @@ $(genModTray).click(function (event) {
 $(loadDeckBtn).click(function (event) {
   loadDeckBtn.classList.add("hide");
   shuffleBtn.classList.remove("hide");
-  displayGenres.innerHTML = activeGMods[0] + " + " + activeGMods[1] + " + " + activeGMods[2];
+  displayGenres.innerHTML = activeGMods.join("...") + "...";
 });
 // function to switch Shuffle & Remix buttons and load fetch results
 $(shuffleBtn).click(function (event) {

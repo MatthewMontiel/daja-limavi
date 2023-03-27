@@ -24,7 +24,7 @@ let popArray;
 let punkArray;
 let psychedelicArray;
 
-// Genre Urls
+// Genre fetch Urls
 let bluesUrl = "https://en.wikipedia.org/w/api.php?action=parse&page=List_of_blues_musicians&prop=links&origin=*&format=json";
 let bluesRockUrl = "https://en.wikipedia.org/w/api.php?action=parse&page=List_of_blues_rock_musicians&prop=links&origin=*&format=json";
 let countryUrl = "https://en.wikipedia.org/w/api.php?action=parse&page=list_of_country_music_performers&prop=links&origin=*&format=json";
@@ -53,12 +53,9 @@ let psychedelicPopUrl = "https://en.wikipedia.org/w/api.php?action=parse&page=Li
 let psychedelicRockUrl = "https://en.wikipedia.org/w/api.php?action=parse&page=List_of_psychedelic_rock_artists&prop=links&origin=*&format=json";
 let acidRockUrl = "https://en.wikipedia.org/w/api.php?action=parse&page=List_of_acid_rock_artists&prop=links&origin=*&format=json";
 
-
-
-
-
+// function to compare genre modifiers
 function compare() {
-  // ARRAY 1------
+  // ARRAY 1 check cycle for each genre
   // Blues
   if (genreArray[0] == "Blues") {
     sortArray1 = bluesArray;
@@ -87,8 +84,7 @@ function compare() {
   if (genreArray[0] == "Psychedelic") {
     sortArray1 = psychedelicArray;
   };
-
-  // ARRAY 2 ------
+  // ARRAY 2 check cycle for each genre
   // Blues
   if (genreArray[1] == "Blues") {
     sortArray2 = bluesArray;
@@ -117,9 +113,7 @@ function compare() {
   if (genreArray[1] == "Psychedelic") {
     sortArray2 = psychedelicArray;
   };
-
-
-  // ARRAY 3 ------
+  // ARRAY 3 check cycle for each genre
   // Blues
   if (genreArray[2] == "Blues") {
     sortArray3 = bluesArray;
@@ -148,9 +142,7 @@ function compare() {
   if (genreArray[2] == "Psychedelic") {
     sortArray3 = psychedelicArray;
   };
-
-
-
+// for loop to combine genre modifiers
   for (var i = 0; i < sortArray1.length; i++) {
     sortArray1.splice(i, 1, sortArray1[i]["*"]);
   };
@@ -161,14 +153,12 @@ function compare() {
     };
   };
   // console.log(sortArray2);
-
   if (genreArray[2]) {
     for (var k = 0; k < sortArray3.length; k++) {
       sortArray3.splice(k, 1, sortArray3[k]["*"]);
     };
     // console.log(sortArray3);
   };
-
   if (genreArray[2]) {
     for (var m = 0; m < sortArray1.length; m++) {
       if (sortArray2.includes(sortArray1[m]) && sortArray3.includes(sortArray1[m])) {
@@ -185,264 +175,264 @@ function compare() {
     outputArray = sortArray1;
   };
   // console.log(outputArray);
-
+  // for loop to exclude irrelevant stings
   for (var n = 0; n < outputArray.length; n++) {
     if (outputArray[n].includes("Category")
-    || outputArray[n].includes("Help:")
-    || outputArray[n].includes("Template")
-    || outputArray[n].includes("Wikipedia")
-    || outputArray[n].includes("(identifier)")
-    || outputArray[n].includes(".com")
-    || outputArray[n].includes("Essex")
-    || outputArray[n].includes("Psychobilly")
-    || outputArray[n].includes("Essex")
-    || outputArray[n].includes("Florida")
-    || outputArray[n].includes("Tennessee")
-    || outputArray[n].includes("AllMusic")
-    || outputArray[n].includes("NME")
-    || outputArray[n].includes("Colchester")
-    || outputArray[n].includes("Folk")
-    || outputArray[n].includes("Gothabilly")
-    || outputArray[n].includes("Observer")
-    || outputArray[n].includes("Times")
-    || outputArray[n].includes("Tennessean")
-    || outputArray[n].includes("PopMatters")
-    || outputArray[n].includes("metal")
-    || outputArray[n].includes("Rock music")
-    || outputArray[n].includes("Rock and roll")
-    || outputArray[n].includes("Punk blues")
-    || outputArray[n].includes("Blues")
-    || outputArray[n].includes("blues")
-    || outputArray[n].includes("agazine")
-    || outputArray[n].includes("CBC")
-    || outputArray[n].includes("CMJ")
-    || outputArray[n].includes("Canongate")
-    || outputArray[n].includes("Tribune")
-    || outputArray[n].includes("Exclaim")
-    || outputArray[n].includes("HarperCollins")
-    || outputArray[n].includes("MTV")
-    || outputArray[n].includes("(newspaper)")
-    || outputArray[n].includes("(website)")
-    || outputArray[n].includes("Gazette")
-    || outputArray[n].includes("Chronicle")
-    || outputArray[n].includes("Telegraph")
-    || outputArray[n].includes("The Guardian")
-    || outputArray[n].includes("Toronto")
-    || outputArray[n].includes("Sputnik")
-    || outputArray[n].includes("Rolling Stone")
-    || outputArray[n].includes("rock")
-    || outputArray[n].includes("punk")
-    || outputArray[n].includes("sychedelia")
-    || outputArray[n].includes("Grebo")
-    || outputArray[n].includes("Press")
-    || outputArray[n].includes("Weekly")
-    || outputArray[n].includes("Routledge")
-    || outputArray[n].includes("Emo")
-    || outputArray[n].includes("Grunge")
-    || outputArray[n].includes("Independent")
-    || outputArray[n].includes("London")
-    || outputArray[n].includes("New wave")
-    || outputArray[n].includes("Pop music")
-    || outputArray[n].includes("hardcore")
-    || outputArray[n].includes("Noise")
-    || outputArray[n].includes("grrrl")
-    || outputArray[n].includes("Power pop")
-    || outputArray[n].includes("Indie pop")
-    || outputArray[n].includes("Kerrang")
-    || outputArray[n].includes("Punk")
-    || outputArray[n].includes("AOL")
-    || outputArray[n].includes("Allmusic")
-    || outputArray[n].includes("Artistdirect")
-    || outputArray[n].includes("Broadcasting")
-    || outputArray[n].includes("BBC")
-    || outputArray[n].includes("Media")
-    || outputArray[n].includes("Blogcritics")
-    || outputArray[n].includes("Network")
-    || outputArray[n].includes("Canadian")
-    || outputArray[n].includes(".ca")
-    || outputArray[n].includes("Chart")
-    || outputArray[n].includes("City Pages")
-    || outputArray[n].includes("Scene")
-    || outputArray[n].includes("College")
-    || outputArray[n].includes("Cross Rhythms")
-    || outputArray[n].includes("Daily")
-    || outputArray[n].includes("News")
-    || outputArray[n].includes(".fm")
-    || outputArray[n].includes("Drowned in Sound")
-    || outputArray[n].includes("Evening Standard")
-    || outputArray[n].includes("Courant")
-    || outputArray[n].includes("Herald")
-    || outputArray[n].includes("IGN")
-    || outputArray[n].includes("Globe")
-    || outputArray[n].includes("Jam")
-    || outputArray[n].includes("Review")
-    || outputArray[n].includes("MIT")
-    || outputArray[n].includes(".net")
-    || outputArray[n].includes("genre")
-    || outputArray[n].includes("Mtv")
-    || outputArray[n].includes("Metro Silicon Valley")
-    || outputArray[n].includes("NBC")
-    || outputArray[n].includes("Nextmedia")
-    || outputArray[n].includes("Nielsen")
-    || outputArray[n].includes("City Paper")
-    || outputArray[n].includes("Pop Candy")
-    || outputArray[n].includes("Radio 1")
-    || outputArray[n].includes("Power chord")
-    || outputArray[n].includes("online")
-    || outputArray[n].includes("Corporation")
-    || outputArray[n].includes("Publishing")
-    || outputArray[n].includes("Sony")
-    || outputArray[n].includes("Technorati")
-    || outputArray[n].includes("Tempo")
-    || outputArray[n].includes("A.V. Club")
-    || outputArray[n].includes("Chicago")
-    || outputArray[n].includes("Kansas City Star")
-    || outputArray[n].includes("The Onion")
-    || outputArray[n].includes("Morning Call")
-    || outputArray[n].includes("Inquirer")
-    || outputArray[n].includes("Time Inc.")
-    || outputArray[n].includes("USA Today")
-    || outputArray[n].includes("University")
-    || outputArray[n].includes("Viacom")
-    || outputArray[n].includes("Vox")
-    || outputArray[n].includes("Wall Of Sound")
-    || outputArray[n].includes("Matheson")
-    || outputArray[n].includes("Western Mail")
-    || outputArray[n].includes("Alberta")
-    || outputArray[n].includes("Buenos Aires")
-    || outputArray[n].includes("Crossover")
-    || outputArray[n].includes("England")
-    || outputArray[n].includes("Funk")
-    || outputArray[n].includes("Ontario")
-    || outputArray[n].includes("Metalcore")
-    || outputArray[n].includes("Hip hop")
-    || outputArray[n].includes("Netherlands")
-    || outputArray[n].includes("Stoke-on-Trent")
-    || outputArray[n].includes("Countrycore")
-    || outputArray[n].includes("Deathcore")
-    || outputArray[n].includes("Electronicore")
-    || outputArray[n].includes("Industrial")
-    || outputArray[n].includes("Nintendocore")
-    || outputArray[n].includes("Mathcore")
-    || outputArray[n].includes("Milan")
-    || outputArray[n].includes("Moshing")
-    || outputArray[n].includes("Poseur")
-    || outputArray[n].includes("Russia")
-    || outputArray[n].includes("Argentina")
-    || outputArray[n].includes("Poland")
-    || outputArray[n].includes("Italy")
-    || outputArray[n].includes("Grindcore")
-    || outputArray[n].includes("Madrid")
-    || outputArray[n].includes("Oslo")
-    || outputArray[n].includes("Paris")
-    || outputArray[n].includes("Screamo")
-    || outputArray[n].includes("Rapcore")
-    || outputArray[n].includes("Edmonton")
-    || outputArray[n].includes("Popular")
-    || outputArray[n].includes("Record")
-    || outputArray[n].includes("Identification")
-    || outputArray[n].includes("Mississippi")
-    || outputArray[n].includes("Appalachian")
-    || outputArray[n].includes("Banjo guitar")
-    || outputArray[n].includes("Bentonia")
-    || outputArray[n].includes("Boogie-woogie")
-    || outputArray[n].includes("Virginia")
-    || outputArray[n].includes("Brenham")
-    || outputArray[n].includes("Carolina")
-    || outputArray[n].includes("Texas")
-    || outputArray[n].includes("Dallas")
-    || outputArray[n].includes("Georgia")
-    || outputArray[n].includes("Falsetto")
-    || outputArray[n].includes("School Girl")
-    || outputArray[n].includes("French horn")
-    || outputArray[n].includes("Opry")
-    || outputArray[n].includes("Fingerstyle")
-    || outputArray[n].includes("Alabama")
-    || outputArray[n].includes("Jazz")
-    || outputArray[n].includes("Jug band")
-    || outputArray[n].includes("Mandolinist")
-    || outputArray[n].includes("label")
-    || outputArray[n].includes("festival")
-    || outputArray[n].includes("industry")
-    || outputArray[n].includes("Books")
-    || outputArray[n].includes("Pocketknife")
-    || outputArray[n].includes("Ragtime")
-    || outputArray[n].includes("historian")
-    || outputArray[n].includes("Slide guitar")
-    || outputArray[n].includes("String band")
-    || outputArray[n].includes("Washington")
-    || outputArray[n].includes("Tin Pan Alley")
-    || outputArray[n].includes("Association")
-    || outputArray[n].includes("Twelve-string")
-    || outputArray[n].includes("Ukelele")
-    || outputArray[n].includes("Vaudeville")
-    || outputArray[n].includes("Company")
-    || outputArray[n].includes("World War")
-    || outputArray[n].includes("writer")
-    || outputArray[n].includes("Alternative")
-    || outputArray[n].includes("Schuster")
-    || outputArray[n].includes("Indy Week")
-    || outputArray[n].includes("ABC")
-    || outputArray[n].includes("NPR")
-    || outputArray[n].includes("HP Newquist")
-    || outputArray[n].includes("Rough Guides")
-    || outputArray[n].includes("Consequence of Sound")
-    || outputArray[n].includes("publisher")
-    || outputArray[n].includes("Sentinel")
-    || outputArray[n].includes("Music Sales Group")
-    || outputArray[n].includes("Seattle")
-    || outputArray[n].includes("Guitar World")
-    || outputArray[n].includes("Loudwire")
-    || outputArray[n].includes("Metal Forces")
-    || outputArray[n].includes("Riff")
-    || outputArray[n].includes("Portal:")
-    || outputArray[n].includes("Acid")
-    || outputArray[n].includes("Beat Generation")
-    || outputArray[n].includes("culture")
-    || outputArray[n].includes("Chillwave")
-    || outputArray[n].includes("Deadhead")
-    || outputArray[n].includes("Dream-beat")
-    || outputArray[n].includes("Dream pop")
-    || outputArray[n].includes("Freak scene")
-    || outputArray[n].includes("Freakbeat")
-    || outputArray[n].includes("Hypnagogic")
-    || outputArray[n].includes("List")
-    || outputArray[n].includes("Madchester")
-    || outputArray[n].includes("Psychedelic")
-    || outputArray[n].includes("New Age")
-    || outputArray[n].includes("New Weird")
-    || outputArray[n].includes("Paisley Underground")
-    || outputArray[n].includes("Summer of Love")
-    || outputArray[n].includes("San Francisco")
-    || outputArray[n].includes("Shoegaze")
-    || outputArray[n].includes("Sampledelia")
-    || outputArray[n].includes("Tropicália")
-    || outputArray[n].includes("UK underground")
-    || outputArray[n].includes("Hippie")
-    || outputArray[n].includes("Accordion")
-    || outputArray[n].includes("Hurdy")
-    || outputArray[n].includes("MusicMight")
-    || outputArray[n].includes("author")
-    || outputArray[n].includes("Loud and Quiet")
-    || outputArray[n].includes("Martin C. Strong")
-    || outputArray[n].includes("Christgau")
-    || outputArray[n].includes("Prown")
-    || outputArray[n].includes("Unterberger")
-    || outputArray[n].includes("on Sound")
-    || outputArray[n].includes("The Fader")
-    || outputArray[n].includes("XLR8R")
-    || outputArray[n].includes("Avant")
-    || outputArray[n].includes("Guitar Player")
-    || outputArray[n].includes("OMH")
-    || outputArray[n].includes("Erlewine")
-    || outputArray[n].includes("Baltimore")
-    || outputArray[n].includes("Blackgaze")
-    || outputArray[n].includes("grunge")
-    || outputArray[n].includes("Neue")
-    || outputArray[n].includes(".today")
-    || outputArray[n].includes("Arizona")
-    || outputArray[n].includes("Wayback")
-     ) {
+      || outputArray[n].includes("Help:")
+      || outputArray[n].includes("Template")
+      || outputArray[n].includes("Wikipedia")
+      || outputArray[n].includes("(identifier)")
+      || outputArray[n].includes(".com")
+      || outputArray[n].includes("Essex")
+      || outputArray[n].includes("Psychobilly")
+      || outputArray[n].includes("Essex")
+      || outputArray[n].includes("Florida")
+      || outputArray[n].includes("Tennessee")
+      || outputArray[n].includes("AllMusic")
+      || outputArray[n].includes("NME")
+      || outputArray[n].includes("Colchester")
+      || outputArray[n].includes("Folk")
+      || outputArray[n].includes("Gothabilly")
+      || outputArray[n].includes("Observer")
+      || outputArray[n].includes("Times")
+      || outputArray[n].includes("Tennessean")
+      || outputArray[n].includes("PopMatters")
+      || outputArray[n].includes("metal")
+      || outputArray[n].includes("Rock music")
+      || outputArray[n].includes("Rock and roll")
+      || outputArray[n].includes("Punk blues")
+      || outputArray[n].includes("Blues")
+      || outputArray[n].includes("blues")
+      || outputArray[n].includes("agazine")
+      || outputArray[n].includes("CBC")
+      || outputArray[n].includes("CMJ")
+      || outputArray[n].includes("Canongate")
+      || outputArray[n].includes("Tribune")
+      || outputArray[n].includes("Exclaim")
+      || outputArray[n].includes("HarperCollins")
+      || outputArray[n].includes("MTV")
+      || outputArray[n].includes("(newspaper)")
+      || outputArray[n].includes("(website)")
+      || outputArray[n].includes("Gazette")
+      || outputArray[n].includes("Chronicle")
+      || outputArray[n].includes("Telegraph")
+      || outputArray[n].includes("The Guardian")
+      || outputArray[n].includes("Toronto")
+      || outputArray[n].includes("Sputnik")
+      || outputArray[n].includes("Rolling Stone")
+      || outputArray[n].includes("rock")
+      || outputArray[n].includes("punk")
+      || outputArray[n].includes("sychedelia")
+      || outputArray[n].includes("Grebo")
+      || outputArray[n].includes("Press")
+      || outputArray[n].includes("Weekly")
+      || outputArray[n].includes("Routledge")
+      || outputArray[n].includes("Emo")
+      || outputArray[n].includes("Grunge")
+      || outputArray[n].includes("Independent")
+      || outputArray[n].includes("London")
+      || outputArray[n].includes("New wave")
+      || outputArray[n].includes("Pop music")
+      || outputArray[n].includes("hardcore")
+      || outputArray[n].includes("Noise")
+      || outputArray[n].includes("grrrl")
+      || outputArray[n].includes("Power pop")
+      || outputArray[n].includes("Indie pop")
+      || outputArray[n].includes("Kerrang")
+      || outputArray[n].includes("Punk")
+      || outputArray[n].includes("AOL")
+      || outputArray[n].includes("Allmusic")
+      || outputArray[n].includes("Artistdirect")
+      || outputArray[n].includes("Broadcasting")
+      || outputArray[n].includes("BBC")
+      || outputArray[n].includes("Media")
+      || outputArray[n].includes("Blogcritics")
+      || outputArray[n].includes("Network")
+      || outputArray[n].includes("Canadian")
+      || outputArray[n].includes(".ca")
+      || outputArray[n].includes("Chart")
+      || outputArray[n].includes("City Pages")
+      || outputArray[n].includes("Scene")
+      || outputArray[n].includes("College")
+      || outputArray[n].includes("Cross Rhythms")
+      || outputArray[n].includes("Daily")
+      || outputArray[n].includes("News")
+      || outputArray[n].includes(".fm")
+      || outputArray[n].includes("Drowned in Sound")
+      || outputArray[n].includes("Evening Standard")
+      || outputArray[n].includes("Courant")
+      || outputArray[n].includes("Herald")
+      || outputArray[n].includes("IGN")
+      || outputArray[n].includes("Globe")
+      || outputArray[n].includes("Jam")
+      || outputArray[n].includes("Review")
+      || outputArray[n].includes("MIT")
+      || outputArray[n].includes(".net")
+      || outputArray[n].includes("genre")
+      || outputArray[n].includes("Mtv")
+      || outputArray[n].includes("Metro Silicon Valley")
+      || outputArray[n].includes("NBC")
+      || outputArray[n].includes("Nextmedia")
+      || outputArray[n].includes("Nielsen")
+      || outputArray[n].includes("City Paper")
+      || outputArray[n].includes("Pop Candy")
+      || outputArray[n].includes("Radio 1")
+      || outputArray[n].includes("Power chord")
+      || outputArray[n].includes("online")
+      || outputArray[n].includes("Corporation")
+      || outputArray[n].includes("Publishing")
+      || outputArray[n].includes("Sony")
+      || outputArray[n].includes("Technorati")
+      || outputArray[n].includes("Tempo")
+      || outputArray[n].includes("A.V. Club")
+      || outputArray[n].includes("Chicago")
+      || outputArray[n].includes("Kansas City Star")
+      || outputArray[n].includes("The Onion")
+      || outputArray[n].includes("Morning Call")
+      || outputArray[n].includes("Inquirer")
+      || outputArray[n].includes("Time Inc.")
+      || outputArray[n].includes("USA Today")
+      || outputArray[n].includes("University")
+      || outputArray[n].includes("Viacom")
+      || outputArray[n].includes("Vox")
+      || outputArray[n].includes("Wall Of Sound")
+      || outputArray[n].includes("Matheson")
+      || outputArray[n].includes("Western Mail")
+      || outputArray[n].includes("Alberta")
+      || outputArray[n].includes("Buenos Aires")
+      || outputArray[n].includes("Crossover")
+      || outputArray[n].includes("England")
+      || outputArray[n].includes("Funk")
+      || outputArray[n].includes("Ontario")
+      || outputArray[n].includes("Metalcore")
+      || outputArray[n].includes("Hip hop")
+      || outputArray[n].includes("Netherlands")
+      || outputArray[n].includes("Stoke-on-Trent")
+      || outputArray[n].includes("Countrycore")
+      || outputArray[n].includes("Deathcore")
+      || outputArray[n].includes("Electronicore")
+      || outputArray[n].includes("Industrial")
+      || outputArray[n].includes("Nintendocore")
+      || outputArray[n].includes("Mathcore")
+      || outputArray[n].includes("Milan")
+      || outputArray[n].includes("Moshing")
+      || outputArray[n].includes("Poseur")
+      || outputArray[n].includes("Russia")
+      || outputArray[n].includes("Argentina")
+      || outputArray[n].includes("Poland")
+      || outputArray[n].includes("Italy")
+      || outputArray[n].includes("Grindcore")
+      || outputArray[n].includes("Madrid")
+      || outputArray[n].includes("Oslo")
+      || outputArray[n].includes("Paris")
+      || outputArray[n].includes("Screamo")
+      || outputArray[n].includes("Rapcore")
+      || outputArray[n].includes("Edmonton")
+      || outputArray[n].includes("Popular")
+      || outputArray[n].includes("Record")
+      || outputArray[n].includes("Identification")
+      || outputArray[n].includes("Mississippi")
+      || outputArray[n].includes("Appalachian")
+      || outputArray[n].includes("Banjo guitar")
+      || outputArray[n].includes("Bentonia")
+      || outputArray[n].includes("Boogie-woogie")
+      || outputArray[n].includes("Virginia")
+      || outputArray[n].includes("Brenham")
+      || outputArray[n].includes("Carolina")
+      || outputArray[n].includes("Texas")
+      || outputArray[n].includes("Dallas")
+      || outputArray[n].includes("Georgia")
+      || outputArray[n].includes("Falsetto")
+      || outputArray[n].includes("School Girl")
+      || outputArray[n].includes("French horn")
+      || outputArray[n].includes("Opry")
+      || outputArray[n].includes("Fingerstyle")
+      || outputArray[n].includes("Alabama")
+      || outputArray[n].includes("Jazz")
+      || outputArray[n].includes("Jug band")
+      || outputArray[n].includes("Mandolinist")
+      || outputArray[n].includes("label")
+      || outputArray[n].includes("festival")
+      || outputArray[n].includes("industry")
+      || outputArray[n].includes("Books")
+      || outputArray[n].includes("Pocketknife")
+      || outputArray[n].includes("Ragtime")
+      || outputArray[n].includes("historian")
+      || outputArray[n].includes("Slide guitar")
+      || outputArray[n].includes("String band")
+      || outputArray[n].includes("Washington")
+      || outputArray[n].includes("Tin Pan Alley")
+      || outputArray[n].includes("Association")
+      || outputArray[n].includes("Twelve-string")
+      || outputArray[n].includes("Ukelele")
+      || outputArray[n].includes("Vaudeville")
+      || outputArray[n].includes("Company")
+      || outputArray[n].includes("World War")
+      || outputArray[n].includes("writer")
+      || outputArray[n].includes("Alternative")
+      || outputArray[n].includes("Schuster")
+      || outputArray[n].includes("Indy Week")
+      || outputArray[n].includes("ABC")
+      || outputArray[n].includes("NPR")
+      || outputArray[n].includes("HP Newquist")
+      || outputArray[n].includes("Rough Guides")
+      || outputArray[n].includes("Consequence of Sound")
+      || outputArray[n].includes("publisher")
+      || outputArray[n].includes("Sentinel")
+      || outputArray[n].includes("Music Sales Group")
+      || outputArray[n].includes("Seattle")
+      || outputArray[n].includes("Guitar World")
+      || outputArray[n].includes("Loudwire")
+      || outputArray[n].includes("Metal Forces")
+      || outputArray[n].includes("Riff")
+      || outputArray[n].includes("Portal:")
+      || outputArray[n].includes("Acid")
+      || outputArray[n].includes("Beat Generation")
+      || outputArray[n].includes("culture")
+      || outputArray[n].includes("Chillwave")
+      || outputArray[n].includes("Deadhead")
+      || outputArray[n].includes("Dream-beat")
+      || outputArray[n].includes("Dream pop")
+      || outputArray[n].includes("Freak scene")
+      || outputArray[n].includes("Freakbeat")
+      || outputArray[n].includes("Hypnagogic")
+      || outputArray[n].includes("List")
+      || outputArray[n].includes("Madchester")
+      || outputArray[n].includes("Psychedelic")
+      || outputArray[n].includes("New Age")
+      || outputArray[n].includes("New Weird")
+      || outputArray[n].includes("Paisley Underground")
+      || outputArray[n].includes("Summer of Love")
+      || outputArray[n].includes("San Francisco")
+      || outputArray[n].includes("Shoegaze")
+      || outputArray[n].includes("Sampledelia")
+      || outputArray[n].includes("Tropicália")
+      || outputArray[n].includes("UK underground")
+      || outputArray[n].includes("Hippie")
+      || outputArray[n].includes("Accordion")
+      || outputArray[n].includes("Hurdy")
+      || outputArray[n].includes("MusicMight")
+      || outputArray[n].includes("author")
+      || outputArray[n].includes("Loud and Quiet")
+      || outputArray[n].includes("Martin C. Strong")
+      || outputArray[n].includes("Christgau")
+      || outputArray[n].includes("Prown")
+      || outputArray[n].includes("Unterberger")
+      || outputArray[n].includes("on Sound")
+      || outputArray[n].includes("The Fader")
+      || outputArray[n].includes("XLR8R")
+      || outputArray[n].includes("Avant")
+      || outputArray[n].includes("Guitar Player")
+      || outputArray[n].includes("OMH")
+      || outputArray[n].includes("Erlewine")
+      || outputArray[n].includes("Baltimore")
+      || outputArray[n].includes("Blackgaze")
+      || outputArray[n].includes("grunge")
+      || outputArray[n].includes("Neue")
+      || outputArray[n].includes(".today")
+      || outputArray[n].includes("Arizona")
+      || outputArray[n].includes("Wayback")
+    ) {
       outputArray.splice(n, 1, "");
     };
   };
@@ -451,11 +441,11 @@ function compare() {
   outputArray = uniq;
 
   console.log(outputArray);
-
+// call to print the results to the screen
   printShuffle();
 }
 
-
+// function to run fetch on genre modifiers selected by user
 function runGenres() {
   if (genreArray.includes("Blues")) {
     getBlues();
@@ -480,11 +470,7 @@ function runGenres() {
   };
 }
 
-
-
-
 // functions that fetch various genres
-
 function getBlues() {
   fetch(bluesUrl)
     .then(function (response) {
@@ -523,9 +509,9 @@ function getBlues() {
             });
         });
     });
-
 }
 
+// function to get country fetch from wikimedia and store data to JSON
 function getCountry() {
   fetch(countryUrl)
     .then(function (response) {
@@ -562,7 +548,6 @@ function getCountry() {
                       }
                     })
                     .then(function (countryRock) {
-
                       let countryPiece1 = country.parse.links;
                       let countryPiece2 = altCountry.parse.links;
                       let countryPiece3 = countryBlues.parse.links;
@@ -574,9 +559,9 @@ function getCountry() {
             });
         });
     });
-
 }
 
+// function to get folk fetch from wikimedia and store data to JSON
 function getFolk() {
   fetch(folkUrl)
     .then(function (response) {
@@ -615,10 +600,9 @@ function getFolk() {
             });
         });
     });
-
 }
 
-
+// function to get metal fetch from wikimedia and store data to JSON
 function getMetal() {
   fetch(metalUrl)
     .then(function (response) {
@@ -676,9 +660,9 @@ function getMetal() {
             });
         });
     });
-
 }
 
+// function to get pop fetch from wikimedia and store data to JSON
 function getPop() {
   fetch(dancePopUrl)
     .then(function (response) {
@@ -715,7 +699,6 @@ function getPop() {
                       }
                     })
                     .then(function (popPunk) {
-
                       let popPiece1 = dancePop.parse.links;
                       let popPiece2 = psychedelicPop.parse.links;
                       let popPiece3 = indiePop.parse.links;
@@ -727,9 +710,9 @@ function getPop() {
             });
         });
     });
-
 }
 
+// function to get punk fetch from wikimedia and store data to JSON
 function getPunk() {
   fetch(punkUrl1)
     .then(function (response) {
@@ -786,9 +769,9 @@ function getPunk() {
             });
         });
     });
-
 }
 
+// function to get psychedelic fetch from wikimedia and store data to JSON
 function getPsychedelic() {
   fetch(psychedelicRockUrl)
     .then(function (response) {
@@ -827,7 +810,6 @@ function getPsychedelic() {
             });
         });
     });
-
 }
 
 // function to print the outputArray from Shuffle fetch
@@ -840,8 +822,6 @@ function printShuffle() {
     resultsListing.appendChild(suggestion);
   }
 }
-
-
 
 // event listener to run getGenres function
 searchBtn.addEventListener('click', runGenres);
