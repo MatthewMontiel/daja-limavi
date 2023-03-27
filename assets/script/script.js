@@ -45,16 +45,10 @@ $(shuffleBtn).click(function (event) {
   remixBtn.classList.remove("hide");
 });
 // function to switch Remix and Load Deck button and reset system
-
 $(remixBtn).click(function (event) {
   remixBtn.classList.add("hide");
   loadDeckBtn.classList.remove("hide");
-  for (var i = 0; i < activeGMods.length; i++) {
-    gmodState = activeGMods[i].getAttribute("value");
-    gmodState[i].setAttribute("value","inactive");
-    console.log(gmodState);
-  }
-  console.log(activeGMods);
+  window.location.reload();
 });
 
 // export variables 
