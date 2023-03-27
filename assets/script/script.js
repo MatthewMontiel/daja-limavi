@@ -8,6 +8,7 @@ let genModTray = document.querySelector("#gmTray");
 let gMods = document.querySelectorAll("[data-genMod]");
 let loadDeckBtn = document.querySelector("#search");
 let shuffleBtn = document.querySelector("#log");
+let remixBtn = document.querySelector("#remix");
 let displayGenres = document.querySelector("#displayGenres");
 
 // functions area
@@ -32,29 +33,29 @@ $(genModTray).click(function (event) {
   }
   console.log(activeGMods);
 });
-// function to switch Load Deck & Shuffle buttons and write activeGMods to search results Tablet
+// function to switch Load Deck to Shuffle buttons and write activeGMods to search results Tablet & mainfetch
 $(loadDeckBtn).click(function (event) {
-  loadDeckBtn.classList.toggle("hide");
-  shuffleBtn.classList.toggle("hide");
+  loadDeckBtn.classList.add("hide");
+  shuffleBtn.classList.remove("hide");
   displayGenres.innerHTML = activeGMods[0] + " + " + activeGMods[1] + " + " + activeGMods[2];
 });
-// function to switch Load Deck & Shuffle buttons and clear activeGMods to search results Tablet
+// function to switch Shuffle & Remix buttons and load fetch results
 $(shuffleBtn).click(function (event) {
-  // printShuffle();
-  loadDeckBtn.classList.toggle("hide");
-  shuffleBtn.classList.toggle("hide");
+  shuffleBtn.classList.add("hide");
+  remixBtn.classList.remove("hide");
 });
-// function to print the outputArray from Shuffle fetch
-// function printShuffle() {
-//   var outputArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-//   for (var i = 0; i < outputArray.length; i++) {
-//     var suggestion = document.createElement("li");
-//     suggestion.innerHTML = outputArray[i];
-//     // console.log(suggestion);
-//     // suggestion.classList.add(); /* if we need to add classes for styling */
-//     resultsListing.appendChild(suggestion);
-//   }
-// }
+// function to switch Remix and Load Deck button and reset system
+
+$(remixBtn).click(function (event) {
+  remixBtn.classList.add("hide");
+  loadDeckBtn.classList.remove("hide");
+  for (var i = 0; i < activeGMods.length; i++) {
+    gmodState = activeGMods[i].getAttribute("value");
+    gmodState[i].setAttribute("value","inactive");
+    console.log(gmodState);
+  }
+  console.log(activeGMods);
+});
 
 // export variables 
 export default activeGMods;

@@ -1,39 +1,51 @@
-:root { /* styling variables that can be used to sub into the initial html replacements */
-    --primarylavender: #6c52a2; 
-    --lavendertransparent: rgb(108, 82, 162, 0.5); 
+:root {
+    /* styling variables that can be used to sub into the initial html replacements */
+    --primarylavender: #6c52a2;
+    --lavendertransparent: rgb(108, 82, 162, 0.5);
     --orchidhighlight: #9552a2;
     --darkblue: #526ea2;
     --brightblue: #296fca;
-    --silver: #fff; /* Matt need the silver tray color for the logo here */
+    --silver: #fff;
+    /* Matt need the silver tray color for the logo here */
     --white: #fff;
-    /* these are just temporary colors to try and get things to trigger while constructing site */
-    --construct1: #00FFFF;
-    --construct2: #32CD32;
 }
-body { /* styling adding the font to the site */
+
+body {
+    /* styling adding the font to the site */
     font-family: Orbitron;
 }
-.navbar{ /* styling for the navbar */
+
+.navbar {
+    /* styling for the navbar */
     background: linear-gradient(to left, #03001e, #7303c0, #ec38bc, #fdeff9);
 }
-#discover{ /* styling for tag line */
-    color:white;
+
+#discover {
+    /* styling for tag line */
+    color: white;
 }
-.button { /* replacement color override of bulma button */
+
+.button {
+    /* replacement color override of bulma button */
     background-color: var(--primarylavender) !important;
     border-color: var(--darkblue) !important;
     color: var(--silver) !important;
 }
-.button:hover { /* replacement color override of bulma button */
+
+.button:hover {
+    /* replacement color override of bulma button */
     background-color: var(--silver) !important;
     border-color: var(--orchidhighlight) !important;
     color: var(--brightblue) !important;
 }
 
-.modifiers { /* styling to add padding around genre buttons */
+.modifiers {
+    /* styling to add padding around genre buttons */
     padding: 25px 0px;
 }
-.searchBG { /* styling for the genre modifier search area */
+
+.searchBG {
+    /* styling for the genre modifier search area */
     display: block;
     padding-top: 2rem;
     background-position: center center;
@@ -41,54 +53,73 @@ body { /* styling adding the font to the site */
     background-attachment: fixed;
     background-image: url(../images/audiocontrols.jpg);
 }
-.searchBar{ /* styling for the Load Deck & Shuffle buttons */
+
+.searchBar {
+    /* styling for the Load Deck & Shuffle buttons */
     padding-left: 23rem;
     padding-bottom: 3rem;
-    
+
 }
-#resultsArea { /* styling for primary container for results of api fetches */
+
+#resultsArea {
+    /* styling for primary container for results of api fetches */
     background-image: url(../images/audiocontrols.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-#results { /* results area styling */
+
+#results {
+    /* results area styling */
     background-color: var(--lavendertransparent) !important;
     padding-top: 2rem;
     color: #fff !important;
-    text-shadow: 3px 3px var(--brightblue) !important;
+    text-shadow: 3px 3px 5px var(--brightblue) !important;
     border-style: ridge;
     border-width: 2rem;
     border-color: #7303c0;
     border-radius: 4rem;
 }
-.ltDance { /* styling for dancers on left stage */
-    align-items:center;
-    justify-content:space-around;
+
+.ltDance {
+    /* styling for dancers on left stage */
+    align-items: center;
+    justify-content: space-around;
     background-color: var(--silver) !important;
     color: var(--darkblue);
 }
-#ltdpole { /* centering for left dancers */
+
+#ltdpole {
+    /* centering for left dancers */
     padding-left: 6rem;
 }
-.rtDance { /* styling for dancers on right stage */
-    align-items:center;
-    justify-content:space-around;
+
+.rtDance {
+    /* styling for dancers on right stage */
+    align-items: center;
+    justify-content: space-around;
     background-color: var(--silver) !important;
     color: var(--darkblue);
 }
-#rtdpole { /* centering for right dancers */
+
+#rtdpole {
+    /* centering for right dancers */
     padding-left: 4rem;
 }
-#resultsListing li { /* styling for results display tablet area */
+
+#resultsListing li {
+    /* styling for results display tablet area */
     color: #fff !important;
     text-shadow: 3px 3px 5px var(--brightblue) !important;
 }
-.hide { /* styling to hide a container */
+
+.hide {
+    /* styling to hide a container */
     display: none;
 }
 
-#basicInstruct { /* styling for basic instructions of using DaJa-LiMaVi */
+#basicInstruct {
+    /* styling for basic instructions of using DaJa-LiMaVi */
     background-color: var(--lavendertransparent) !important;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -101,18 +132,17 @@ body { /* styling adding the font to the site */
     border-radius: 4rem;
 }
 
-.teamPic{
+.teamPic {
     position: center center;
     background: linear-gradient(to top, #03001e, #7303c0, #ec38bc, #fdeff9);
 }
 
-.powerPic{
-padding-left: 50rem;
-padding-top: 10rem;
+.powerPic {
+    padding-left: 50rem;
+    padding-top: 10rem;
 }
 
 .h1 {
     position: center center;
     font-family: Orbitron;
-    font-size:
 }

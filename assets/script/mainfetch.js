@@ -87,7 +87,7 @@ let acidRockUrl = "https://en.wikipedia.org/w/api.php?action=parse&page=List_of_
 function compare() {
   // ARRAY 1------
   // Blues
-  if (genreArray[0] == "blues") {
+  if (genreArray[0] == "Blues") {
     sortArray1 = bluesArray;
   };
   // Country
@@ -117,7 +117,7 @@ function compare() {
 
   // ARRAY 2 ------
   // Blues
-  if (genreArray[1] == "blues") {
+  if (genreArray[1] == "Blues") {
     sortArray2 = bluesArray;
   };
   // Country
@@ -148,7 +148,7 @@ function compare() {
 
   // ARRAY 3 ------
   // Blues
-  if (genreArray[2] == "blues") {
+  if (genreArray[2] == "Blues") {
     sortArray3 = bluesArray;
   };
   // Country
@@ -217,7 +217,7 @@ function compare() {
 
 
 function runGenres() {
-  if (genreArray.includes("blues")) {
+  if (genreArray.includes("Blues")) {
     getBlues();
   };
   if (genreArray.includes("Country")) {
