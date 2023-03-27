@@ -28,6 +28,7 @@ Then I am presented with recommendations<br>
 To use please select three genres and press load deck.<br>
 When load deck is pressed the user will then see the shuffle button to get their results.<br>
 When the shuffle button is pressed, some Giphy dancers are deployed as well to party as you find some new music!<br>
+Remix will reset everything so you can do it all over again!<br>
 
 ## *Application*
 
