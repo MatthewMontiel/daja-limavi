@@ -146,3 +146,20 @@ body {
     position: center center;
     font-family: Orbitron;
 }
+
+.footer{
+    padding-bottom: 1rem;
+    padding-top: 2
+}
+
+.howTo, .missionState {
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 2rem;
+}
+
+.contactUs {
+    padding-left: 33rem;
+    padding-top: 8rem;
+}
+

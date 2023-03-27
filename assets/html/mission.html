@@ -1,74 +1,81 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>DaJa-LiMaVi - Mission</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/reset.css" />
-  <link rel="stylesheet" href="../css/style.css" />
-  <title>DaJa-LiMaVi - Mission</title>
-</head>
+  <!--Top of Nav-->
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../index.html">
+        <img id="home" src="../images/dj-header.png" width="112" height="28" />
+      </a>
+      <a
+        role="button"
+        class="navbar-burger"
+        aria-label="menu"
+        aria-expanded="false"
+        data-target="navbarBasicExample"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
 
-<!--Top of Nav-->
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a class="navbar-item" href="../../index.html">
-      <img id="home" src="../images/dj-header.png" width="112" height="28" />
-    </a>
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="../html/howto.html">How to Use</a>
 
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">More</a>
 
-  <div id="navbarBasicExample" class="navbar-menu">
-    <div class="navbar-start">
-      <a class="navbar-item" href="../html/howto.html">How to Use</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="../html/team.html">The Team</a>
+            <a class="navbar-item" href="../html/mission.html">Our Mission</a>
+            <a class="navbar-item" href="../html/contact.html">Contact</a>
+            <hr class="navbar-divider" />
+          </div>
+        </div>
+      </div>
 
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">More</a>
-
-
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="../html/team.html">The Team</a>
-          <a class="navbar-item" href="../html/mission.html">Our Mission</a>
-          <a class="navbar-item" href="../html/contact.html">Contact</a>
-          <hr class="navbar-divider" />
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <strong id="discover">WHO WILL YOU DISCOVER NEXT?</strong>
+          <!--We should try to make this a randomized search suggestion-->
         </div>
       </div>
     </div>
+  </nav>
+  <!--End of Nav Bar-->
 
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <strong id="discover">WHO WILL YOU DISCOVER NEXT?</strong>
-        <!--We should try to make this a randomized search suggestion-->
+  <!-- Body -->
+  <body>
+    <section class="missionState">
+      <div class="content is-large">
+        <h1>Our Mission</h1>
+        <p>
+          Whether you're joyfully connecting with grand kids, learning together
+          and making new memories, or enjoying coffee in the morning.
+          we're here to help curate the soundtrack to your life.
+        </p>
       </div>
-    </div>
-  </div>
-</nav>
-<!--End of Nav Bar-->
-
-<!-- Body -->
-<div>
-  Whether you're joyfully connecting with grandkids, learning together and making new memories, or enjoying coffee in
-  the morning -
-  Arrive at any moment with everything you need. For any occasion or conversation, we're here to help curate the
-  soundtrack to your life.
-
-  As a user, I want to get music recommendations
-  When I input criteria and click submit
-  Then I am presented with recommendations
-
-  As developers, we want to produce a list of responses
-  based on a user's input selections that are submitted
-  as requests to multiple API endpoints
-</div>
+    </section>
+  </body>
+</html>
