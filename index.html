@@ -41,8 +41,8 @@
           <!-- Link to Contact info -->
           <a class="navbar-item" href="./assets/html/contact.html">Contact</a>
           <hr class="navbar-divider" />
-          <!-- Link to Report Issues -->
-          <a class="navbar-item" href="./assets/html/reportissue.html">Report an Issue</a>
+          <!-- Link to Report Issues as future enhancement-->
+          <!-- <a class="navbar-item" href="./assets/html/reportissue.html">Report an Issue</a> -->
         </div>
       </div>
     </div>
@@ -54,7 +54,7 @@
     </div>
   </div>
 </nav>
-<!--end of nav bar-->
+<!-- end of nav bar -->
 
 <body>
   <!-- Primary container for background image -->
@@ -65,51 +65,59 @@
         Select up to three (3) genres to Load into the tape Deck to see where there is overlap of artists that may be of
         interest to you:
       </p>
+      <!-- container to hold all genre buttons -->
       <section id="gmTray" class="modifiers">
         <div class="field pl-5 is-grouped is-grouped-multiline">
+          <!-- button for punk genre -->
           <p class="control">
             <a data-genMod title="Punk" value="inactive"
               class="button is-link is-outlined is-rounded is-light is-focused">
               Punk
             </a>
           </p>
+          <!-- button for country genre -->
           <p class="control">
             <a data-genMod title="Country" value="inactive"
               class="button is-link is-outlined is-rounded is-light is-focused">
               Country
             </a>
           </p>
+          <!-- button for blues genre -->
           <p class="control">
             <a data-genMod title="Blues" value="inactive"
               class="button is-link is-outlined is-rounded is-light is-focused">
               Blues
             </a>
           </p>
+          <!-- button for folk genre -->
           <p class="control">
             <a data-genMod title="Folk" value="inactive"
               class="button is-link is-outlined is-rounded is-light is-focused">
               Folk
             </a>
           </p>
+          <!-- button for psychedelic genre -->
           <p class="control">
             <a data-genMod title="Psychedelic" value="inactive"
               class="button is-link is-outlined is-rounded is-light is-focused">
               Psychedelic
             </a>
           </p>
+          <!-- button for pop genre -->
           <p class="control">
             <a data-genMod title="Pop" value="inactive"
               class="button is-link is-outlined is-rounded is-light is-focused">
               Pop
             </a>
           </p>
+          <!-- button for metal genre -->
           <p class="control">
             <a data-genMod title="Metal" value="inactive"
               class="button is-link is-outlined is-rounded is-light is-focused">
               Metal
             </a>
           </p>
-          <!-- Future expansion for more genres
+          <!-- Future expansion for more genres buttons
           <p class="control">
             <a data-genMod title="Rock" value="inactive"
               class="button is-link is-outlined is-rounded is-light is-focused">
@@ -194,6 +202,7 @@
   </div>
   <!-- Search Results Tablet -->
   <div id="resultsArea" class="columns">
+    <!-- area for left side dancers -->
     <div id="ltDance" class="column">
       <div id="ltdpole" class="is-rounded">
         <iframe id="ltd1" class="has-ratio" width="200" height="200" frameborder="0" allowfullscreen></iframe>
@@ -203,16 +212,18 @@
         <iframe id="ltd5" class="has-ratio" width="200" height="200" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
+    <!-- area for fetch results  -->
     <div id="results" class="container is-max-desktop">
       <div id="djBooth" class="field is-grouped">
-        <img src="./assets/images/DJ Limavi.png" width="75" />
+        <img id="djemoji" src="./assets/images/DJ Limavi.png" width="75" />
         <div id="displayGenres" class="is-size-2">
-          &nbsp;&nbsp;Listening...
+          Listening...
         </div>
       </div>
       <ul id="resultsListing">
       </ul>
     </div>
+    <!-- area for right side dancers -->
     <div id="rtDance" class="column">
       <div id="rtdpole" class="is-rounded">
         <iframe id="rtd1" class="has-ratio" width="200" height="200" frameborder="0" allowfullscreen></iframe>
