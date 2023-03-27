@@ -31,7 +31,7 @@ When the shuffle button is pressed, some Giphy dancers are deployed as well to p
 
 ## *Application*
 
-![alt text](./assets/images/screenshot.png)
+![alt text](./assets/images/DaJa-LiMaVi_inaction_screenshot.png)
 
 - [Deployed application](https://matthewmontiel.github.io/daja-limavi/)
 

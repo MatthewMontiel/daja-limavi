@@ -20,6 +20,7 @@ let rtd4 = document.querySelector("#rtd4");
 let rtd5 = document.querySelector("#rtd5");
 let shuffleBtn = document.querySelector("#log")
 let LoadDeckBtn = document.querySelector("#search");
+let remixBtn = document.querySelector("#remix");
 
 // functions
 // function to get the dancers to the party
@@ -93,6 +94,6 @@ shuffleBtn.addEventListener('click', function () {
     partyTime();
 });
 // eventlistener to call partysOver function
-LoadDeckBtn.addEventListener('click', function () {
+remixBtn.addEventListener('click', function () {
     partysOver();
 });
