@@ -440,6 +440,12 @@ function compare() {
   let uniq = [...new Set(outputArray)];
   outputArray = uniq;
 
+  for (var o = 0; o < outputArray.length; o++) {
+    if (outputArray[o] == [""]) {
+      outputArray.splice(o, 1)
+    }
+  }
+
   console.log(outputArray);
 // call to print the results to the screen
   printShuffle();
