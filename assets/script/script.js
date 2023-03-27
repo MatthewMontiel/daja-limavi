@@ -35,8 +35,7 @@ $(genModTray).click(function (event) {
 });
 // function to switch Load Deck to Shuffle buttons and write activeGMods to search results Tablet & mainfetch
 $(loadDeckBtn).click(function (event) {
-  loadDeckBtn.classList.add("hide");
-  shuffleBtn.classList.remove("hide");
+  setTime();
   displayGenres.innerHTML = activeGMods.join("...") + "...";
 });
 // function to switch Shuffle & Remix buttons and load fetch results
@@ -50,6 +49,22 @@ $(remixBtn).click(function (event) {
   loadDeckBtn.classList.remove("hide");
   window.location.reload();
 });
+
+let secondsLeft = 1;
+
+function setTime() {
+  // Sets interval in variable
+  let timerInterval = setInterval(function() {
+    secondsLeft--;
+
+    if(secondsLeft === 0) {
+      loadDeckBtn.classList.add("hide");
+      shuffleBtn.classList.remove("hide");
+      clearInterval(timerInterval);
+    }
+
+  }, 1000);
+}
 
 // export variables 
 export default activeGMods;

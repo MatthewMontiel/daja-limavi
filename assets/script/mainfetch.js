@@ -1,13 +1,8 @@
 // import variables 
 import activeGMods from "./script.js";
 // global variables
-let fetchURL = 1;
-let results = "a";
-let resultsArea = document.querySelector('#resultsArea');
-let resultsList = document.querySelector('ul');
-let searchBtn = document.getElementById('search');
-let logBtn = document.getElementById('log');
-let log2Btn = document.getElementById('log2');
+let loadDeckBtn = document.getElementById('search');
+let shuffleBtn = document.getElementById('log');
 let genreArray = activeGMods;
 let sortArray1;
 let sortArray2;
@@ -830,8 +825,5 @@ function printShuffle() {
 }
 
 // event listener to run getGenres function
-searchBtn.addEventListener('click', runGenres);
-logBtn.addEventListener('click', compare);
-// log2Btn.addEventListener('click', compare2);
-// export variables
-// export default results
+loadDeckBtn.addEventListener('click', runGenres);
+shuffleBtn.addEventListener('click', compare);
